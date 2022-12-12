@@ -64,3 +64,6 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+Crashed World/Logs/AssetImportWorker0.log
+Crashed World/Logs/shadercompiler-AssetImportWorker0.log
+Crashed World/Logs/shadercompiler-UnityShaderCompiler.exe0.log
