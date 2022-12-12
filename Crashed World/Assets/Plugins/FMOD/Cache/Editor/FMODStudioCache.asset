@@ -22,7 +22,7 @@ MonoBehaviour:
   - {fileID: 3943094592291057275}
   StringsBanks:
   - {fileID: 7940172613300203958}
-  cacheTime: 638064633824910210
+  cacheTime: 638064644002841192
   cacheVersion: 131601
 --- !u!114 &3943094592291057275
 MonoBehaviour:
@@ -39,7 +39,7 @@ MonoBehaviour:
   Path: ../FMOD Crashed World/Crashed World/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638064633824900214
+  lastModified: 638064644002831184
   FileSizes:
   - Name: Desktop
     Value: 9984
@@ -86,7 +86,7 @@ MonoBehaviour:
   Path: ../FMOD Crashed World/Crashed World/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638064633824910210
+  lastModified: 638064644002841192
   FileSizes:
   - Name: Desktop
     Value: 758
