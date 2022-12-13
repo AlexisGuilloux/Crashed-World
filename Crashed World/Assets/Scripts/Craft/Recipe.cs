@@ -1,5 +1,5 @@
 using CrashedWorld.Attribute;
-using System;
+using CrashedWorld.Inventory;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,20 +9,13 @@ namespace CrashedWorld.Crafts
 	public class Recipe : ScriptableObject
 	{
 		public string ID;
-		public List<RecipeItem> recipies = new List<RecipeItem>();
+		public List<ItemAmount> recipies = new List<ItemAmount>();
 		[Item] public string result;
 
 		public bool CanBeCrafted(/* Inventory ? */)
 		{
 			//Compare recipes and inventory
 			return true;
-		}
-
-		[Serializable]
-		public class RecipeItem
-		{
-			[Item] public string Item;
-			public int amount;
 		}
 	}
 }

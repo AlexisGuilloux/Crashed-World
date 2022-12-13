@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: MinorHealthPotion
   recipies:
-  - Item: Wood
+  - itemID: Wood
     amount: 1
-  - Item: RedHerbs
+  - itemID: RedHerbs
     amount: 2
   result: MinorHealthPotion
