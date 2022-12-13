@@ -11,7 +11,7 @@ namespace CrashedWorld.Items
 		/// The function return null if the object can no longer be upgraded
 		/// </summary>
 		/// <returns>The upgrade recipe</returns>
-		Recipe GetUpgradeRecipe();
+		List<Recipe> GetUpgradeRecipes();
 	}
 }
 	

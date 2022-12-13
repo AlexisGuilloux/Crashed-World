@@ -1,4 +1,5 @@
 using CrashedWorld.Crafts;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace CrashedWorld.Items
@@ -8,16 +9,16 @@ namespace CrashedWorld.Items
     {
 		[Space, Header("   Potion")]
         public int health;
-		public Recipe upgradeRecipe;
+		public List<Recipe> upgradeRecipe = new List<Recipe>();
 
 		public void Use()
 		{
 			// Give player 'health' amount of health.
 		}
 
-		public Recipe GetUpgradeRecipe()
+		public List<Recipe> GetUpgradeRecipes()
 		{
-			return upgradeRecipe;
+			return new List<Recipe>(upgradeRecipe);
 		}
 	}
 }
