@@ -1,21 +1,22 @@
 using CrashedWorld.Attribute;
 using CrashedWorld.Items;
+using CrashedWorld.Utilities;
 using System;
 using System.Collections.Generic;
 
-namespace CrashedWorld.Inventory
+namespace CrashedWorld.Inventories
 {
 	public class Inventory
 	{
 		/// <summary>
 		/// string ItemID, int Amount
 		/// </summary>
-		public static event Action<string, int> OnAddItem;
+		public event Action<string, int> OnAddItem;
 
 		/// <summary>
 		/// string ItemID, int Amount
 		/// </summary>
-		public static event Action<string, int> OnRemoveItem;
+		public event Action<string, int> OnRemoveItem;
 
 		public Dictionary<string, int> items;
 
@@ -32,6 +33,11 @@ namespace CrashedWorld.Inventory
 			OnAddItem?.Invoke(item, value);
 		}
 
+		public void Remove(List<ItemAmount> items)
+		{
+			if (Contains(items))
+				items.ForEach(i => Remove(i));
+		}
 		public void Remove(ItemAmount itemAmount) => Remove(itemAmount.itemID, itemAmount.amount);
 		public void Remove(Item item, int value = 1) => Remove(item.ID, value);
 		public void Remove(string item, int value = 1)
@@ -49,8 +55,6 @@ namespace CrashedWorld.Inventory
 		{
 			return items.ContainsKey(item) && items[item] >= value;
 		}
-
-
 	}
 
 	[Serializable]

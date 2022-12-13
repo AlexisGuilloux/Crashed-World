@@ -1,3 +1,4 @@
+using CrashedWorld.Inventories;
 using System;
 using UnityEngine;
 
@@ -7,12 +8,12 @@ namespace CrashedWorld.Crafts
 	{
 		public static event Action<Recipe> OnCraftSucceed;
 
-		public void CraftRecipe(Recipe recipe)
+		public void CraftRecipe(Recipe recipe, Inventory inventory)
 		{
-			if (recipe.CanBeCrafted(/* Inventory ? */))
+			if (recipe.CanBeCrafted(inventory))
 			{
-				// Remove recipies from inventory ??
-				// Add recipe result to inventory ??
+				inventory.Remove(recipe.recipies);
+				inventory.Add(recipe.result);
 				OnCraftSucceed?.Invoke(recipe);
 			}
 		}
