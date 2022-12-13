@@ -283,8 +283,8 @@ MonoBehaviour:
   switchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: ../FMOD Crashed World/Crashed World/Crashed World.fspro
-  sourceBankPath: ../FMOD Crashed World/Crashed World/Build
+  sourceProjectPath: FMOD Crashed World/Crashed World/Crashed World.fspro
+  sourceBankPath: FMOD Crashed World/Crashed World/Build
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
@@ -323,12 +323,12 @@ MonoBehaviour:
   LastEventReferenceScanVersion: 131601
   Platforms:
   - {fileID: -7144886982017285338}
-  - {fileID: 8633710791860864976}
+  - {fileID: -7122143989115938555}
   - {fileID: -6399041910621683412}
   - {fileID: -1445922601824921399}
-  - {fileID: 8859604052418942574}
   - {fileID: 5395232225848933419}
-  - {fileID: -7122143989115938555}
+  - {fileID: 8633710791860864976}
+  - {fileID: 8859604052418942574}
   MigratedPlatforms: 0a000000090000000800000005000000060000000200000001000000
 --- !u!114 &5395232225848933419
 MonoBehaviour:
@@ -461,11 +461,11 @@ MonoBehaviour:
     HasValue: 0
   displaySortOrder: 0
   childIdentifiers:
+  - b7716510a1f36934c87976f3a81dbf3d
   - c88d16e5272a4e241b0ef0ac2e53b73d
   - fd7c55dab0fce234b8c25f6ffca523c1
-  - 2c5177b11d81d824dbb064f9ac8527da
   - 52eb9df5db46521439908db3a29a1bbb
-  - b7716510a1f36934c87976f3a81dbf3d
+  - 2c5177b11d81d824dbb064f9ac8527da
   codecChannels:
     Value: []
     HasValue: 0
