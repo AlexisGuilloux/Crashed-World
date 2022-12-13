@@ -5,6 +5,6 @@ namespace CrashedWorld.Player
 {
     public class PlayerInventory : Singleton<PlayerInventory>
     {
-        public Inventory bag;
+        public Inventory bag = new Inventory();
     }
 }

@@ -18,7 +18,7 @@ namespace CrashedWorld.Inventories
 		/// </summary>
 		public event Action<string, int> OnRemoveItem;
 
-		public Dictionary<string, int> items;
+		public Dictionary<string, int> items = new Dictionary<string, int>();
 
 		public void Add(List<ItemAmount> items) => items.ForEach(i => Add(i));
 		public void Add(ItemAmount itemAmount) => Add(itemAmount.itemID, itemAmount.amount);
