@@ -1,5 +1,5 @@
 using CrashedWorld.Attribute;
-using CrashedWorld.Inventory;
+using CrashedWorld.Inventories;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,10 +12,9 @@ namespace CrashedWorld.Crafts
 		public List<ItemAmount> recipies = new List<ItemAmount>();
 		[Item] public string result;
 
-		public bool CanBeCrafted(/* Inventory ? */)
+		public bool CanBeCrafted(Inventory inventory)
 		{
-			//Compare recipes and inventory
-			return true;
+			return inventory.Contains(recipies);
 		}
 	}
 }

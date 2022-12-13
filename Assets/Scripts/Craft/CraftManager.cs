@@ -1,4 +1,8 @@
+using CrashedWorld.Inventories;
+using CrashedWorld.Player;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace CrashedWorld.Crafts
@@ -7,12 +11,16 @@ namespace CrashedWorld.Crafts
 	{
 		public static event Action<Recipe> OnCraftSucceed;
 
-		public void CraftRecipe(Recipe recipe)
+		public List<Recipe> recipes;
+
+		public List<Recipe> availableRecipe => recipes.Where(r => r.CanBeCrafted(PlayerInventory.Instance.bag)).ToList();
+
+		public void CraftRecipe(Recipe recipe, Inventory inventory)
 		{
-			if (recipe.CanBeCrafted(/* Inventory ? */))
+			if (recipe.CanBeCrafted(inventory))
 			{
-				// Remove recipies from inventory ??
-				// Add recipe result to inventory ??
+				inventory.Remove(recipe.recipies);
+				inventory.Add(recipe.result);
 				OnCraftSucceed?.Invoke(recipe);
 			}
 		}
