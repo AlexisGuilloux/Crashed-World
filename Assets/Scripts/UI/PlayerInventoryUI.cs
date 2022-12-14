@@ -11,10 +11,8 @@ namespace CrashedWorld.UI
 	//TODO - Handle inventory full (but not in ui)
 	public class PlayerInventoryUI : MonoBehaviour
 	{
-		[Header("   Data")]
-		public GridLayoutGroup grid;
-
 		[Header("   References")]
+		public GridLayoutGroup grid;
 		public Image dragImage;
 
 		private List<GridSlotUI> slots = new List<GridSlotUI>();
