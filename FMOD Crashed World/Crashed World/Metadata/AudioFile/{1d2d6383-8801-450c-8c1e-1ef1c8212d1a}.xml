@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="AudioFile" id="{1d2d6383-8801-450c-8c1e-1ef1c8212d1a}">
 		<property name="assetPath">
-			<value>Weather/Wind/Weather_Wind_Strong_Low_02.wav</value>
+			<value>Ambience/Weather/Wind/Weather_Wind_Strong_Low_02.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>
