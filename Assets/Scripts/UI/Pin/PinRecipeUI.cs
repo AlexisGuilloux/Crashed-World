@@ -10,6 +10,10 @@ namespace CrashedWorld.UI
 {
 	public class PinRecipeUI : MonoBehaviour
 	{
+		[Header("   Display")]
+		public CanvasGroup canvas;
+
+		[Header("   References")]
 		public RecipeUI recipeUI;
 		public Image resultImage;
 		public GameObject keycodeContainer;
@@ -19,6 +23,7 @@ namespace CrashedWorld.UI
 
 		void Awake()
 		{
+			Hide();
 			Locator.pinRecipe = this;
 		}
 
@@ -26,7 +31,6 @@ namespace CrashedWorld.UI
 		{
 			CraftManager.OnRecipeSelected += CraftManager_OnRecipeSelected;
 			CraftManager.OnCraftSucceed += CraftManager_OnCraftSucceed;
-			Hide();
 		}
 
 		private void CraftManager_OnRecipeSelected(Recipe recipe)
@@ -58,14 +62,14 @@ namespace CrashedWorld.UI
 			Hide();
 		}
 
-		public void Hide()
-		{
-			gameObject.SetActive(false);
-		}
-
 		public void Show()
 		{
-			gameObject.SetActive(true);
+			canvas.alpha = 1;
+		}
+
+		public void Hide()
+		{
+			canvas.alpha = 0;
 		}
 
 		public void Update()
