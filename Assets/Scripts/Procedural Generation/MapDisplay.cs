@@ -2,9 +2,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MapDisplay : MonoBehaviour {
-    //public Renderer textureRenderer;
     public MeshFilter meshFilter;
     public MeshRenderer meshRenderer;
+    public MeshCollider meshCollider;
     public MeshFilter edgeFilter;
     public MeshRenderer edgeRenderer;
     public void DrawTerrainMesh(Cell[,] grid, int size) {
@@ -40,6 +40,7 @@ public class MapDisplay : MonoBehaviour {
         mesh.RecalculateNormals();
         
         meshFilter.sharedMesh = mesh;
+        meshCollider.sharedMesh = mesh;
         DrawTexture(grid,size);
         DrawEdge(grid,size);
     }
