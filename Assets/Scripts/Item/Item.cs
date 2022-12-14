@@ -15,8 +15,6 @@ namespace CrashedWorld.Items
 
         public bool isStackable;
 
-        public virtual void Use() { }
-
 		public override string ToString()
 		{
 			return itemName;
