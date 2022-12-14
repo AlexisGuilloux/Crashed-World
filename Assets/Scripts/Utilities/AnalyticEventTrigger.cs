@@ -26,15 +26,17 @@ public class AnalyticEventTrigger : MonoBehaviour
         {
             Debug.Log($"consent: {id}");
         }
-        
+    }
+
+
+    public static void SendMapGenerationEvent(int size, float waterLevel)
+    {
         Dictionary<string, object> parameters = new Dictionary<string, object>()
         {
-            { "userID", UnityServices.ExternalUserId },
-            { "eventName", "CustomEvent01" },
-            { "eventUUID", DateTime.Now.GetHashCode().ToString() }
+            {"Map_Generated_size", size},
+            {"Map_Generated_water_level", waterLevel}
         };
         
-        AnalyticsService.Instance.CustomData("CustomEvent01", parameters);
-
+        AnalyticsService.Instance.CustomData("MapGenerated", parameters);
     }
 }

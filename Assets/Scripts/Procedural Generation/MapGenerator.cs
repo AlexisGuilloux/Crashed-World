@@ -13,6 +13,8 @@ public class MapGenerator : MonoBehaviour {
 
     private void Start() {
         DrawMapInEditor();
+        
+        AnalyticEventTrigger.SendMapGenerationEvent(size, waterLevel);
     }
 
     void GenerateMapData() {
