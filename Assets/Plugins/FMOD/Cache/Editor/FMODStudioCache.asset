@@ -1,5 +1,32 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9062604467746897396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Water/Water_Gentle/Water_Gentle_Wave_Lp
+  m_EditorClassIdentifier: 
+  Path: event:/Water/Water_Gentle/Water_Gentle_Wave_Lp
+  Guid:
+    Data1: 282431347
+    Data2: 1260650521
+    Data3: 87314579
+    Data4: -1502339645
+  Banks:
+  - {fileID: -77690059118878222}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 57469
 --- !u!114 &-2347893461694245920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,11 +42,38 @@ MonoBehaviour:
   Path: FMOD Crashed World/Crashed World/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638065471241659890
+  lastModified: 638066293675045350
   FileSizes:
   - Name: Desktop
-    Value: 758
+    Value: 1000
   Exists: 1
+--- !u!114 &-723529141152133838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Water/Water_Gentle/Water_Gentle_Lp
+  m_EditorClassIdentifier: 
+  Path: event:/Water/Water_Gentle/Water_Gentle_Lp
+  Guid:
+    Data1: 10630459
+    Data2: 1235208680
+    Data3: 1747895474
+    Data4: -1564461698
+  Banks:
+  - {fileID: -77690059118878222}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 30000
 --- !u!114 &-77690059118878222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35,10 +89,10 @@ MonoBehaviour:
   Path: FMOD Crashed World/Crashed World/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638065471241649894
+  lastModified: 638066293675025359
   FileSizes:
   - Name: Desktop
-    Value: 9984
+    Value: 3438432
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -56,15 +110,18 @@ MonoBehaviour:
   - {fileID: -2347893461694245920}
   - {fileID: -77690059118878222}
   EditorEvents:
-  - {fileID: 6013569714655798502}
+  - {fileID: -723529141152133838}
+  - {fileID: 4353348628650790287}
+  - {fileID: -9062604467746897396}
+  - {fileID: 3245147954406622330}
   EditorParameters: []
   MasterBanks:
   - {fileID: -77690059118878222}
   StringsBanks:
   - {fileID: -2347893461694245920}
-  cacheTime: 638065471241659890
+  cacheTime: 638066293675045350
   cacheVersion: 131601
---- !u!114 &6013569714655798502
+--- !u!114 &3245147954406622330
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -74,14 +131,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/AudioTest
+  m_Name: event:/Weather/Weather_Wind/Weather_Wind_Soft/Weather_Wind_Soft
   m_EditorClassIdentifier: 
-  Path: event:/AudioTest
+  Path: event:/Weather/Weather_Wind/Weather_Wind_Soft/Weather_Wind_Soft
   Guid:
-    Data1: 1011671766
-    Data2: 1294767047
-    Data3: 1221587869
-    Data4: 1523565867
+    Data1: -800045170
+    Data2: 1324736631
+    Data3: -1518403949
+    Data4: 535176576
   Banks:
   - {fileID: -77690059118878222}
   IsStream: 0
@@ -90,4 +147,31 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 773
+  Length: 6000
+--- !u!114 &4353348628650790287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Weather/Weather_Wind/Weather_Wind_Strong/Weather_Wind_Strong
+  m_EditorClassIdentifier: 
+  Path: event:/Weather/Weather_Wind/Weather_Wind_Strong/Weather_Wind_Strong
+  Guid:
+    Data1: -996808873
+    Data2: 1112103946
+    Data3: -2096250215
+    Data4: -2027713124
+  Banks:
+  - {fileID: -77690059118878222}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6000
