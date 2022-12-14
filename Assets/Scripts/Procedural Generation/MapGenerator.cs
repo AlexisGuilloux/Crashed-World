@@ -1,6 +1,4 @@
-using System;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -20,7 +18,7 @@ namespace Procedural_Generation {
         Cell[,] grid;
 
         public GameObject[] treePrefabs;
-        private List<GameObject> treesOnMap;
+        private List<GameObject> treesOnMap = new List<GameObject>();
         private void Start() {
             DrawMapInEditor();
         }
