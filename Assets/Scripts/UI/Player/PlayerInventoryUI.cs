@@ -32,6 +32,7 @@ namespace CrashedWorld.UI
 		void Start()
 		{
 			PlayerInventory.Instance.bag.OnAddItem += Bag_OnAddItem;
+			PlayerInventory.Instance.bag.OnRemoveItem += Bag_OnRemoveItem;
 
 			InitSlot();
 		}
@@ -39,6 +40,7 @@ namespace CrashedWorld.UI
 		private void OnDestroy()
 		{
 			PlayerInventory.Instance.bag.OnAddItem -= Bag_OnAddItem;
+			PlayerInventory.Instance.bag.OnRemoveItem -= Bag_OnRemoveItem;
 		}
 
 		private void Update()
@@ -75,6 +77,12 @@ namespace CrashedWorld.UI
 				AddNotStackableItem(value, item);
 		}
 
+		private void Bag_OnRemoveItem(string itemID, int value)
+		{
+			GridSlotUI slot = slots.FirstOrDefault(s => !s.Empty && s.ItemID.Equals(itemID));
+			slot.RemoveAmount(value);
+		}
+
 		private void AddNotStackableItem(int value, Item item)
 		{
 			for (int i = 0; i < value; i++)
@@ -97,13 +105,13 @@ namespace CrashedWorld.UI
 			}
 			else
 			{
-				slot.AddMore(value);
+				slot.AddAmount(value);
 			}
 		}
 
 		public void OnClickSlot(Item item, Vector3 position)
 		{
-			if(item == null)
+			if (item == null)
 			{
 				recipeList.Init();
 				recipeList.Show();

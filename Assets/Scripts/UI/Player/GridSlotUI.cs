@@ -1,5 +1,6 @@
 
 using CrashedWorld.Items;
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -47,10 +48,20 @@ namespace CrashedWorld.UI
 			}
 		}
 
-		public void AddMore(int value = 1)
+		public void AddAmount(int value = 1)
 		{
 			amount += value;
 			amountLabel.text = "x" + amount.ToString();
+		}
+
+		public void RemoveAmount(int value = 1)
+		{
+			amount -= value;
+
+			if (amount <= 0)
+				SetItem(null);
+			else
+				amountLabel.text = "x" + amount.ToString();
 		}
 
 		#region UI Events
