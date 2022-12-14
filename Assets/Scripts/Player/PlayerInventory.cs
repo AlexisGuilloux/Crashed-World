@@ -5,6 +5,8 @@ namespace CrashedWorld.Player
 {
     public class PlayerInventory : Singleton<PlayerInventory>
     {
-        public Inventory bag = new Inventory();
+        public const int MAX_SIZE = 32;
+
+        public Inventory bag = new Inventory(MAX_SIZE);
     }
 }
