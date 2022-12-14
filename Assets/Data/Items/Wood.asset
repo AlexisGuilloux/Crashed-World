@@ -16,5 +16,5 @@ MonoBehaviour:
   itemName: Wood
   description: One of the greatest material of all times, you can barely do whatever
     you want with it.
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 94ce3216f0b7550458be2eb95384d34b, type: 3}
   isStackable: 1
