@@ -14,6 +14,7 @@ namespace CrashedWorld.UI
 		[Header("   References")]
 		public GridLayoutGroup grid;
 		public Image dragImage;
+		public RecipeListUI recipeList;
 
 		private List<GridSlotUI> slots = new List<GridSlotUI>();
 
@@ -67,6 +68,15 @@ namespace CrashedWorld.UI
 			else
 			{
 				slot.AddMore(value);
+			}
+		}
+
+		public void OnClickSlot(Item item, Vector3 position)
+		{
+			if(item == null)
+			{
+				recipeList.Init();
+				recipeList.Show();
 			}
 		}
 
