@@ -63,7 +63,7 @@ namespace CrashedWorld.UI
 			if (slot == null)
 			{
 				slot = slots.FirstOrDefault(s => s.Empty);
-				slot.SetItem(item);
+				slot.SetItem(item, value);
 			}
 			else
 			{
