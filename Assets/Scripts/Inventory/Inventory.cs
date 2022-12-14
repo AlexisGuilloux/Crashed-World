@@ -65,6 +65,12 @@ namespace CrashedWorld.Inventories
 		{
 			return items.ContainsKey(item) && items[item] >= value;
 		}
+
+		public int Count(Item item) => Count(item.ID);
+		public int Count(string item)
+		{
+			return items.ContainsKey(item) ? items[item] : 0;
+		}
 	}
 
 	[Serializable]

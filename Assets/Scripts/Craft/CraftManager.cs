@@ -1,13 +1,14 @@
+using CrashedWorld.Crafts;
 using CrashedWorld.Inventories;
 using CrashedWorld.Player;
+using CrashedWorld.Utilities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEngine;
 
-namespace CrashedWorld.Crafts
+namespace CrashedWorld.Managers
 {
-	public class CraftManager : MonoBehaviour
+	public class CraftManager : Singleton<CraftManager>
 	{
 		public static event Action<Recipe> OnCraftSucceed;
 

@@ -1,3 +1,4 @@
+
 using CrashedWorld.Items;
 using TMPro;
 using UnityEngine;
@@ -6,7 +7,7 @@ using UnityEngine.UI;
 
 namespace CrashedWorld.UI
 {
-	public class GridSlotUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IBeginDragHandler, IDragHandler, IEndDragHandler, IDropHandler
+	public class GridSlotUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler, IBeginDragHandler, IDragHandler, IEndDragHandler, IDropHandler
 	{
 		public Color hoverColor = Color.white;
 		public Image frame;
@@ -61,6 +62,11 @@ namespace CrashedWorld.UI
 		public void OnPointerExit(PointerEventData data)
 		{
 			frame.color = Color.white;
+		}
+
+		public void OnPointerClick(PointerEventData data)
+		{
+			Locator.playerInventory.OnClickSlot(item, transform.position);
 		}
 
 		public void OnBeginDrag(PointerEventData data)
