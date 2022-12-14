@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -5,38 +6,43 @@ using Random = UnityEngine.Random;
 namespace Procedural_Generation {
     public class MapGenerator : MonoBehaviour {
         public int size = 100;  //need to be smaller than 188 ?
-        
+        public bool useFalloff = true;
         [Range(0,1)]
         public float waterLevel = .4f;
         [Range(0,1)]
         public float treeDensity = .5f;
-        float treeNoiseScale = .5029f;
-        
+        float treeNoiseScale = 20f;
+
         public float scale;
         public int seed;
         public Vector2 offset;
         Cell[,] grid;
-
-        public GameObject[] treePrefabs;
-        private List<GameObject> treesOnMap = new List<GameObject>();
+        private float[,] noiseMap;
+        public GameObject[] prefabs;
+        private List<GameObject> objectsOnMap = new List<GameObject>();
         private void Start() {
             DrawMapInEditor();
         }
 
         void GenerateMapData() {
-            float[,] noiseMap = GenerateNoiseMap(size, seed, scale, offset);
+            noiseMap = GenerateNoiseMap(size, seed, scale, offset);
             float[,] falloffMap = GenerateFalloffMap(size);
             grid = new Cell[size, size];
             for(int y = 0; y < size; y++) {
                 for(int x = 0; x < size; x++) {
                     float noiseValue = noiseMap[x, y];
-                    noiseValue -= falloffMap[x, y];
+                    if (useFalloff) {
+                        noiseValue = Mathf.Clamp01(noiseValue - falloffMap[x, y]);
+                    }
                     bool isWater = noiseValue < waterLevel;
+                    if (noiseValue > 1 || noiseValue < 0) {
+                        Debug.Log(noiseValue);}
                     Cell cell = new Cell(isWater);
                     grid[x, y] = cell;
                 }
             }
-            
+
+
         }
 
         float[,] GenerateNoiseMap(int size, int seed, float scale, Vector2 offset) {  //add default persistance and lacunarity if wanting a more detailed map
@@ -76,12 +82,12 @@ namespace Procedural_Generation {
                         float v = Random.Range(0f, treeDensity);
                         if (treeNoiseMap[x, y] < v) {
                             //that's a tree
-                            GameObject prefab = treePrefabs[Random.Range(0,treePrefabs.Length)];
+                            GameObject prefab = prefabs[Random.Range(0,prefabs.Length)];
                             GameObject tree = Instantiate(prefab, transform);
                             tree.transform.position = new Vector3(x, 0, y);
                             tree.transform.rotation = Quaternion.Euler(0, Random.Range(0,360f),0);
                             tree.transform.localScale = Vector3.one * Random.Range(.8f,1.2f);
-                            treesOnMap.Add(tree);
+                            objectsOnMap.Add(tree);
                         }
                     }
                 }
@@ -99,9 +105,10 @@ namespace Procedural_Generation {
         }
 
         public void DrawMapInEditor() {
-            foreach (var tree in treesOnMap) {
+            foreach (var tree in objectsOnMap) {
                 DestroyImmediate(tree);
             }
+            objectsOnMap.Clear();
             GenerateMapData();
             MapDisplay display = FindObjectOfType<MapDisplay>();
             GenerateCrystals(grid);
