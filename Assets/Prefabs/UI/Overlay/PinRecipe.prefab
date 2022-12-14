@@ -297,6 +297,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1486917075500435971}
+  - component: {fileID: 3256281370986670530}
   - component: {fileID: 2237080943406238646}
   m_Layer: 5
   m_Name: PinRecipe
@@ -327,6 +328,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 350, y: 150}
   m_Pivot: {x: 1, y: 1}
+--- !u!225 &3256281370986670530
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6090092854840159385}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!114 &2237080943406238646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -339,6 +352,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33b735709240f5d46a691d1df42c4530, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvas: {fileID: 3256281370986670530}
   recipeUI: {fileID: 718573204509436522}
   resultImage: {fileID: 8627871997725832446}
   keycodeContainer: {fileID: 5801224855216215465}
