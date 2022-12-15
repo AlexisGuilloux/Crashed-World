@@ -10,6 +10,12 @@ public class Player : MonoBehaviour
     public float speed = 6f;
     public float gravity = 0.01f;
 
+    //HP
+    public int maxHealth = 100;
+    public int currentHealth;
+
+    public Health healthBar;
+
     // SPRITE MANAGERS
     private SpriteRenderer sprite;
 
@@ -30,6 +36,10 @@ public class Player : MonoBehaviour
         // KEYBOARD
         inpCon = new InputControlller();
         inpCon.Enable();
+
+        //HP
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
     }
 
 
@@ -45,6 +55,19 @@ public class Player : MonoBehaviour
             sprite.flipX = inputVector.x < 0;
             isFlipped = sprite.flipX;
         }
+
+        //TestZone for losing hp
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            TakeDamage(20);
+        }
     }
     // -------------------------------------------------------------------------------------------- CUSTOM METHODS
+
+    void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+
+        healthBar.SetHealh(currentHealth);
+    }
 }
