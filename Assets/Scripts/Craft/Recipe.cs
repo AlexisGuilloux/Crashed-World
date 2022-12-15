@@ -11,6 +11,7 @@ namespace CrashedWorld.Crafts
 		public string ID;
 		public List<ItemAmount> recipies = new List<ItemAmount>();
 		[Item] public string result;
+		public bool isUpgradeRecipe;
 
 		public bool CanBeCrafted(Inventory inventory)
 		{
