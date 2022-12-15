@@ -27,13 +27,8 @@ namespace CrashedWorld.UI
 		{
 			Hide();
 			Locator.playerInventory = this;
-		}
-
-		void Start()
-		{
 			PlayerInventory.Instance.bag.OnAddItem += Bag_OnAddItem;
 			PlayerInventory.Instance.bag.OnRemoveItem += Bag_OnRemoveItem;
-
 			InitSlot();
 		}
 
@@ -60,11 +55,15 @@ namespace CrashedWorld.UI
 		public void Show()
 		{
 			canvas.alpha = 1;
+			canvas.interactable = true;
+			canvas.blocksRaycasts = true;
 		}
 
 		public void Hide()
 		{
 			canvas.alpha = 0;
+			canvas.interactable = false;
+			canvas.blocksRaycasts = false;
 		}
 
 		private void Bag_OnAddItem(string itemID, int value)
@@ -113,7 +112,12 @@ namespace CrashedWorld.UI
 		{
 			if (item == null)
 			{
-				recipeList.Init();
+				recipeList.Init(CraftManager.Instance.BasicRecipes);
+				recipeList.Show();
+			}
+			else if (item is IUpgradable upgradableItem && upgradableItem.GetUpgradeRecipes().Count > 0)
+			{
+				recipeList.Init(upgradableItem.GetUpgradeRecipes());
 				recipeList.Show();
 			}
 		}

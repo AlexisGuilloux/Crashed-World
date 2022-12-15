@@ -21,3 +21,4 @@ MonoBehaviour:
   - itemID: Wood
     amount: 4
   result: RaffinedStonePickaxe
+  isUpgradeRecipe: 1

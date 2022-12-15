@@ -16,7 +16,7 @@ namespace CrashedWorld.Managers
 
 		public List<Recipe> recipes;
 
-		public List<Recipe> BasicRecipe => recipes.Where(r => !r.isUpgradeRecipe).ToList();
+		public List<Recipe> BasicRecipes => recipes.Where(r => !r.isUpgradeRecipe).ToList();
 		public List<Recipe> AvailableRecipe => recipes.Where(r => r.CanBeCrafted(PlayerInventory.Instance.bag)).ToList();
 
 		public Recipe selectedRecipe { get; private set; }

@@ -15,8 +15,9 @@ MonoBehaviour:
   ID: StoneAxe
   itemName: Stone axe
   description: A axe where some part has been replaced by wood.
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: e74be9cc827655e42a31427a3c98f64c, type: 3}
   isStackable: 0
-  upgradeRecipe: []
+  upgradeRecipe:
+  - {fileID: 11400000, guid: c34d4f4b204bdd04aa050762507eb65f, type: 2}
   enemyDamage: 1
   environmentDamage: 4
