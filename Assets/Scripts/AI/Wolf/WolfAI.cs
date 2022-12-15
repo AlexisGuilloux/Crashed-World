@@ -31,9 +31,15 @@ public class WolfAI : MonoBehaviour
     bool m_PlayerNear;                              //  If the player is near, state of hearing
     bool m_IsPatrol;                                //  If the enemy is patrol, state of patroling
     bool m_CaughtPlayer;                            //  if the enemy has caught the player
- 
+    
+    private SpriteRenderer sprite;
+    private bool isFlipped = false;
+
+
     void Start()
     {
+        sprite = GetComponent<SpriteRenderer>();
+
         m_PlayerPosition = Vector3.zero;
         m_IsPatrol = true;
         m_CaughtPlayer = false;
@@ -52,7 +58,7 @@ public class WolfAI : MonoBehaviour
  
     private void Update()
     {
-            EnviromentView();                       //  Check whether or not the player is in the enemy's field of vision
+            EnviromentView();                       //  Check whether or not the player is in the NPC's field of vision
  
         if (!m_IsPatrol)
         {
