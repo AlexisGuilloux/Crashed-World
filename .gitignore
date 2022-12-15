@@ -67,3 +67,6 @@ crashlytics-build.properties
 
 # UserSettings
 UserSettings/
+
+# Fmod 
+/fmod_editor.log
