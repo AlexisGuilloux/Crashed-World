@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 7247cb9a40e6732458adcb62b26bad78, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5366,7 +5366,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 161594972}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -31.72, y: 0.1, z: 2.69}
+  m_LocalPosition: {x: -15.85, y: 0.9600001, z: -4.65}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -39337,7 +39337,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1184785074}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -20.78, y: 0, z: -12.25}
+  m_LocalPosition: {x: -29.47, y: 0, z: -12.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -44075,7 +44075,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1323972118}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -15.49, y: 0.1, z: -31.72}
+  m_LocalPosition: {x: -31.39, y: 0.9, z: 2.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -71737,12 +71737,12 @@ PrefabInstance:
     - target: {fileID: 3719732877861237421, guid: 01376be7ecdd68a4aae84290364f518a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 39.71
+      value: 54.84
       objectReference: {fileID: 0}
     - target: {fileID: 3719732877861237421, guid: 01376be7ecdd68a4aae84290364f518a,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.96
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3719732877861237421, guid: 01376be7ecdd68a4aae84290364f518a,
         type: 3}
@@ -71786,6 +71786,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3719732877861237422, guid: 01376be7ecdd68a4aae84290364f518a,
         type: 3}
+      propertyPath: startWaitTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3719732877861237422, guid: 01376be7ecdd68a4aae84290364f518a,
+        type: 3}
       propertyPath: waypoints.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -71799,6 +71804,11 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[1]
       value: 
       objectReference: {fileID: 1323972119}
+    - target: {fileID: 3719732877861237423, guid: 01376be7ecdd68a4aae84290364f518a,
+        type: 3}
+      propertyPath: m_StoppingDistance
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6246738118781632273, guid: 01376be7ecdd68a4aae84290364f518a,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -73920,17 +73930,17 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   colorGradientTexture: {fileID: 0}
   shallowColor: {r: 0, g: 0.7725491, b: 0.62352943, a: 0.5019608}
-  deepColor: {r: 0.01176471, g: 0.28601578, b: 0.50980073, a: 1}
+  deepColor: {r: 0.01176471, g: 0.2860152, b: 0.50980073, a: 1}
   colorDepth: 0.57
-  horizonColor: {r: 0, g: 0.22719228, b: 0.8, a: 1}
+  horizonColor: {r: 0, g: 0.22719172, b: 0.8, a: 1}
   horizonDistance: 20
   shoreFade: 1
-  shoreColor: {r: 0, g: 0.98039216, b: 0.30170205, a: 0}
+  shoreColor: {r: 0, g: 0.98039216, b: 0.3017015, a: 0}
   shoreStrength: 0
   shoreBlend: 1
   shoreDepth: 0.74
   waveColor: {r: 0, g: 0, b: 0, a: 0}
-  underwaterColor: {r: 0.20367634, g: 0.30954516, b: 0.517647, a: 0}
+  underwaterColor: {r: 0.2036758, g: 0.3095446, b: 0.517647, a: 0}
   underwaterColorStrength: 0
   underwaterRefractionStrength: 0.099
   surfaceFoamTexture: {fileID: 2800000, guid: ab507ff7ff37d954da98b07bf0bb152e, type: 3}
@@ -73938,8 +73948,8 @@ MonoBehaviour:
   surfaceFoamCutoff: 0.56
   surfaceFoamDistortion: 0
   surfaceFoamBlend: 1
-  surfaceFoamColor1: {r: 0.05862865, g: 0.055816986, b: 0.9245283, a: 0.6509804}
-  surfaceFoamColor2: {r: 0.16269639, g: 0.15711525, b: 0.8584906, a: 0}
+  surfaceFoamColor1: {r: 0.058628224, g: 0.055816576, b: 0.9245283, a: 0.6509804}
+  surfaceFoamColor2: {r: 0.16269585, g: 0.15711471, b: 0.8584906, a: 0}
   surfaceFoamMovement: {x: 0.7, y: 0, z: 0.47, w: 0.01}
   surfaceFoamDirection1: 0.7
   surfaceFoamDirection2: 0.47
@@ -73962,7 +73972,7 @@ MonoBehaviour:
   intersectionFoamDepth: 0.72
   intersectionFoamTexture: {fileID: 2800000, guid: 772031b03d9d46e4ab03e15c8e17718c,
     type: 3}
-  intersectionFoamColor: {r: 0.0715527, g: 0.13336197, b: 0.5660378, a: 1}
+  intersectionFoamColor: {r: 0.071552284, g: 0.13336143, b: 0.5660378, a: 1}
   intersectionFoamMovement: {x: 0, y: 0}
   intersectionFoamDirection: 0
   intersectionFoamSpeed: 0
