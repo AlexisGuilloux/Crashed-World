@@ -1098,7 +1098,7 @@ Transform:
   m_Children:
   - {fileID: 1118131192}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &950804062
 MonoBehaviour:
@@ -1115,8 +1115,8 @@ MonoBehaviour:
   navMeshAgent: {fileID: 0}
   startWaitTime: 4
   timeToRotate: 2
-  speedWalk: 6
-  speedRun: 9
+  speedWalk: 1
+  speedRun: 4
   viewRadius: 15
   viewAngle: 90
   playerMask:
@@ -2158,7 +2158,7 @@ PrefabInstance:
     - target: {fileID: 3231480817855207453, guid: 50d746c03fea2614799705a08b39884a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3231480817855207453, guid: 50d746c03fea2614799705a08b39884a,
         type: 3}
@@ -2386,8 +2386,8 @@ MonoBehaviour:
   navMeshAgent: {fileID: 0}
   startWaitTime: 1
   timeToRotate: 2
-  speedWalk: 6
-  speedRun: 9
+  speedWalk: 1
+  speedRun: 6
   viewRadius: 15
   viewAngle: 180
   playerMask:
@@ -2433,6 +2433,24 @@ Transform:
   m_Father: {fileID: 502623269}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1901943616 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8337061753258578076, guid: 88258891228d3e54c93c97352beaeefe,
+    type: 3}
+  m_PrefabInstance: {fileID: 1118131191}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1901943618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901943616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a5f26a06a52bd54fa76b2d19d0918cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1919518726
 GameObject:
   m_ObjectHideFlags: 0
