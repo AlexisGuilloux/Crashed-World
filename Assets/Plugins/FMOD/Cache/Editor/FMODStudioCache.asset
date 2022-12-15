@@ -96,7 +96,7 @@ MonoBehaviour:
   Path: FMOD Crashed World/Crashed World/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638065324935246018
+  lastModified: 638067181458045944
   FileSizes:
   - Name: Desktop
     Value: 1392
@@ -197,7 +197,7 @@ MonoBehaviour:
   Path: FMOD Crashed World/Crashed World/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638065324935246018
+  lastModified: 638067181458521099
   FileSizes:
   - Name: Desktop
     Value: 6777632
@@ -233,7 +233,7 @@ MonoBehaviour:
   - {fileID: -77690059118878222}
   StringsBanks:
   - {fileID: -2347893461694245920}
-  cacheTime: 638065324935246018
+  cacheTime: 638067181458521099
   cacheVersion: 131601
 --- !u!114 &531622350125156263
 MonoBehaviour:
