@@ -15,8 +15,9 @@ MonoBehaviour:
   ID: WoodAxe
   itemName: Wood axe
   description: A axe made of wood.
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 835d3429e3b2d7541a47c1203737790c, type: 3}
   isStackable: 0
-  upgradeRecipe: []
+  upgradeRecipe:
+  - {fileID: 11400000, guid: 207086eb646e5c241bd1530b7795855b, type: 2}
   enemyDamage: 0
   environmentDamage: 2

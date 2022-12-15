@@ -15,8 +15,9 @@ MonoBehaviour:
   ID: WoodPickaxe
   itemName: Wood pickaxe
   description: A pickaxe made of wood.
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 30ca46df731b8ea4dad42d5d45921a7a, type: 3}
   isStackable: 0
-  upgradeRecipe: []
+  upgradeRecipe:
+  - {fileID: 11400000, guid: dfad9d6fe0fe7d64797c3284b2d0950e, type: 2}
   enemyDamage: 0
   environmentDamage: 2
