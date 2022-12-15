@@ -66503,11 +66503,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4753010764037052803, guid: 176d4a59073b15346bb94715a4bb42a1,
         type: 3}
-      propertyPath: navMeshAgent
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 4753010764037052803, guid: 176d4a59073b15346bb94715a4bb42a1,
-        type: 3}
       propertyPath: waypoints.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -73774,17 +73769,17 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   colorGradientTexture: {fileID: 0}
   shallowColor: {r: 0, g: 0.7725491, b: 0.62352943, a: 0.5019608}
-  deepColor: {r: 0.01176471, g: 0.28601632, b: 0.50980073, a: 1}
+  deepColor: {r: 0.01176471, g: 0.28601614, b: 0.50980073, a: 1}
   colorDepth: 0.57
-  horizonColor: {r: 0, g: 0.22719282, b: 0.8, a: 1}
+  horizonColor: {r: 0, g: 0.22719264, b: 0.8, a: 1}
   horizonDistance: 20
   shoreFade: 1
-  shoreColor: {r: 0, g: 0.98039216, b: 0.3017026, a: 0}
+  shoreColor: {r: 0, g: 0.98039216, b: 0.30170244, a: 0}
   shoreStrength: 0
   shoreBlend: 1
   shoreDepth: 0.74
   waveColor: {r: 0, g: 0, b: 0, a: 0}
-  underwaterColor: {r: 0.20367685, g: 0.3095457, b: 0.517647, a: 0}
+  underwaterColor: {r: 0.2036767, g: 0.30954555, b: 0.517647, a: 0}
   underwaterColorStrength: 0
   underwaterRefractionStrength: 0.099
   surfaceFoamTexture: {fileID: 2800000, guid: ab507ff7ff37d954da98b07bf0bb152e, type: 3}
@@ -73792,8 +73787,8 @@ MonoBehaviour:
   surfaceFoamCutoff: 0.56
   surfaceFoamDistortion: 0
   surfaceFoamBlend: 1
-  surfaceFoamColor1: {r: 0.05862905, g: 0.055817373, b: 0.9245283, a: 0.6509804}
-  surfaceFoamColor2: {r: 0.1626969, g: 0.15711576, b: 0.8584906, a: 0}
+  surfaceFoamColor1: {r: 0.05862893, g: 0.055817254, b: 0.9245283, a: 0.6509804}
+  surfaceFoamColor2: {r: 0.16269675, g: 0.15711561, b: 0.8584906, a: 0}
   surfaceFoamMovement: {x: 0.7, y: 0, z: 0.47, w: 0.01}
   surfaceFoamDirection1: 0.7
   surfaceFoamDirection2: 0.47
@@ -73816,7 +73811,7 @@ MonoBehaviour:
   intersectionFoamDepth: 0.72
   intersectionFoamTexture: {fileID: 2800000, guid: 772031b03d9d46e4ab03e15c8e17718c,
     type: 3}
-  intersectionFoamColor: {r: 0.071553074, g: 0.13336247, b: 0.5660378, a: 1}
+  intersectionFoamColor: {r: 0.07155297, g: 0.13336232, b: 0.5660378, a: 1}
   intersectionFoamMovement: {x: 0, y: 0}
   intersectionFoamDirection: 0
   intersectionFoamSpeed: 0

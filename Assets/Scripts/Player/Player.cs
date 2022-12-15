@@ -57,10 +57,10 @@ public class Player : MonoBehaviour
         }
 
         //TestZone for losing hp
-        if (Input.GetKeyDown(KeyCode.Space))
+        /*if (Input.GetKeyDown(KeyCode.Space))
         {
             TakeDamage(20);
-        }
+        }*/
     }
     // -------------------------------------------------------------------------------------------- CUSTOM METHODS
 
