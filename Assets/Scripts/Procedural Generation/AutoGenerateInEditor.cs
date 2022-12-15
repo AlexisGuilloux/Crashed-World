@@ -14,6 +14,7 @@ public class AutoGenerateInEditor : Editor
         }
         if (GUILayout.Button("Generate")) {
             mapGen.DrawMapInEditor();
+            mapGen.GenerateCrystals();
         }
     }
 }
