@@ -19,3 +19,4 @@ MonoBehaviour:
   - itemID: Stone
     amount: 3
   result: StonePickaxe
+  isUpgradeRecipe: 1

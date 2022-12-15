@@ -21,3 +21,4 @@ MonoBehaviour:
   - itemID: Wood
     amount: 2
   result: SwordStoneRaffined
+  isUpgradeRecipe: 1

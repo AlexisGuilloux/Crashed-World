@@ -337,8 +337,8 @@ CanvasGroup:
   m_GameObject: {fileID: 6090092854840159385}
   m_Enabled: 1
   m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
+  m_Interactable: 0
+  m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
 --- !u!114 &2237080943406238646
 MonoBehaviour:
@@ -354,7 +354,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 3256281370986670530}
   recipeUI: {fileID: 718573204509436522}
-  resultImage: {fileID: 8627871997725832446}
   keycodeContainer: {fileID: 5801224855216215465}
   keycodeLabel: {fileID: 899826832166507353}
 --- !u!1 &6481032001470600552
@@ -552,6 +551,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9013738318883645552, guid: 7c83a8921ecede14780b27d6e171305b,
+        type: 3}
+      propertyPath: resultIcon
+      value: 
+      objectReference: {fileID: 8627871997725832446}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c83a8921ecede14780b27d6e171305b, type: 3}
 --- !u!224 &274627076242516466 stripped

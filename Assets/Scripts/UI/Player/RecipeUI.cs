@@ -4,12 +4,14 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 namespace CrashedWorld.UI
 {
 	public class RecipeUI : MonoBehaviour, IPointerClickHandler
     {
         public TextMeshProUGUI label;
+        public Image resultIcon;
         public List<RecipeRequirementUI> requirements;
 
 		private Recipe recipe;
@@ -18,6 +20,7 @@ namespace CrashedWorld.UI
 		{
 			this.recipe = recipe;
 
+			resultIcon.sprite = ItemManager.Instance.database.Get(recipe.result).icon;
             label.text = ItemManager.Instance.database.Get(recipe.result).itemName;
             requirements.ForEach(r => r.Hide());
             for(int i = 0; i < recipe.recipies.Count; i++)

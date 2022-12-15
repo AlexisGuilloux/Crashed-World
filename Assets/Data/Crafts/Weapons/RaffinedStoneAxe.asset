@@ -19,3 +19,4 @@ MonoBehaviour:
   - itemID: Stone
     amount: 6
   result: StoneAxeRaffined
+  isUpgradeRecipe: 1

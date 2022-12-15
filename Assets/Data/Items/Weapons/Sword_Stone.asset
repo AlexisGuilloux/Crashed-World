@@ -15,8 +15,9 @@ MonoBehaviour:
   ID: StoneSword
   itemName: Stone sword
   description: A wood sword with stone as the blade part
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: a319ff9a52b030344b73878d5005dc97, type: 3}
   isStackable: 0
-  upgradeRecipe: []
+  upgradeRecipe:
+  - {fileID: 11400000, guid: c7087cac81cf1854cbb83cc286b67012, type: 2}
   enemyDamage: 2
   environmentDamage: 0

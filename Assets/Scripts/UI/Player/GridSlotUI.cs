@@ -100,9 +100,6 @@ namespace CrashedWorld.UI
 
 		public void OnEndDrag(PointerEventData data)
 		{
-			if (Empty)
-				return;
-
 			Locator.playerInventory.dragImage.gameObject.SetActive(false);
 		}
 
