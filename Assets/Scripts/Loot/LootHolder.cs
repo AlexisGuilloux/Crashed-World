@@ -10,7 +10,7 @@ using UnityEngine;
 namespace CrashedWorld.Loots
 {
 	[RequireComponent(typeof(Collider))]
-	public class LootHolder : MonoBehaviour, IDamageable
+	public class LootHolder : MonoBehaviour
 	{
 		[Header("   Health")]
 		public int health;
@@ -22,10 +22,18 @@ namespace CrashedWorld.Loots
 		[Header("   Loot")]
 		public List<LootData> lootsData = new List<LootData>();
 
-		public void TryDamage(int targetDamage, WeaponTypes weaponType)
+		private void OnTriggerEnter(Collider other)
 		{
-			int damageValue = Mathf.RoundToInt(targetDamage * GetMultiplier(weaponType));
+			if (!CanBeDamagedBy(other))
+				return;
+
+			int damageValue = 1 /*Mathf.RoundToInt(other.damageValue * GetMultiplier(other.weaponType))*/;
 			Damage(damageValue);
+		}
+
+		private bool CanBeDamagedBy(Collider other)
+		{
+			return true;
 		}
 
 		private void Damage(int value)
