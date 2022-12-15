@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 public class WolfAI : MonoBehaviour
 {
+    // Preset -------------------------------------------------------------------------------------------------------------------------------------------------------
     public NavMeshAgent navMeshAgent;               //  Nav mesh agent component
     public float startWaitTime = 4;                 //  Wait time of every action
     public float timeToRotate = 2;                  //  Wait time when the enemy detect near the player without seeing
@@ -31,10 +32,15 @@ public class WolfAI : MonoBehaviour
     bool m_PlayerNear;                              //  If the player is near, state of hearing
     bool m_IsPatrol;                                //  If the enemy is patrol, state of patroling
     bool m_CaughtPlayer;                            //  if the enemy has caught the player
-    
+
+    // CUSTOM-------------------------------------------------------------------------------------------------------------------------------------------------------
     private SpriteRenderer sprite;
     private bool isFlipped = false;
 
+    public int maxHealth = 20;
+    public int currentHealth;
+    public Health healthBar;
+    //--------------------------------------------------------------------------------------------------------------------------------------------------------------
 
     void Start()
     {
@@ -54,6 +60,9 @@ public class WolfAI : MonoBehaviour
         navMeshAgent.isStopped = false;
         navMeshAgent.speed = speedWalk;             //  Set the navemesh speed with the normal speed of the enemy
         navMeshAgent.SetDestination(waypoints[m_CurrentWaypointIndex].position);    //  Set the destination to the first waypoint
+
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
     }
  
     private void Update()
@@ -143,6 +152,7 @@ public class WolfAI : MonoBehaviour
         }
     }
  
+ // CUSTOM-------------------------------------------------------------------------------------------------------------------------------------------------------
     private void OnAnimatorMove()
     {
  
@@ -191,7 +201,7 @@ public class WolfAI : MonoBehaviour
             }
         }
     }
- 
+ //--------------------------------------------------------------------------------------------------------------------------------------------------------------
     void EnviromentView()
     {
         Collider[] playerInRange = Physics.OverlapSphere(transform.position, viewRadius, playerMask);   //  Make an overlap sphere around the enemy to detect the playermask in the view radius
