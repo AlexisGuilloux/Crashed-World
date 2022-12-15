@@ -112,6 +112,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
+  weaponTypeMultipliers:
+  - type: 1
+    multiplier: 1
+  - type: 2
+    multiplier: 0.5
+  defaultMultiplier: 0
   lootsData:
   - weight: 3
     items:
