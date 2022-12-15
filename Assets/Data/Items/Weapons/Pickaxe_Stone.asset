@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4631e973234004488c3bbb9c3698e32, type: 3}
+  m_Name: Pickaxe_Stone
+  m_EditorClassIdentifier: 
+  ID: StonePickaxe
+  itemName: Stone pickaxe
+  description: A pickaxe made of stone.
+  icon: {fileID: 21300000, guid: 4c3f43b96abfdd446925dfa0ca26f86c, type: 3}
+  isStackable: 0
+  upgradeRecipe:
+  - {fileID: 11400000, guid: d479f4d7bf4280b4ebb53149ce172994, type: 2}
+  weaponType: 2
+  damageValue: 4

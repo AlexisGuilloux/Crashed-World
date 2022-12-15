@@ -1,5 +1,6 @@
 using CrashedWorld.Crafts;
 using CrashedWorld.Managers;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,13 +11,13 @@ namespace CrashedWorld.UI
         public VerticalLayoutGroup recipeContainer;
         public RecipeUI recipePrefab;
 
-        public void Init()
+        public void Init(List<Recipe> recipes)
 		{
             foreach (Transform child in recipeContainer.transform)
             {
                 Destroy(child.gameObject);
             }
-            foreach (Recipe recipe in CraftManager.Instance.recipes)
+            foreach (Recipe recipe in recipes)
 			{
                 Instantiate(recipePrefab, recipeContainer.transform).Init(recipe);
 			}
