@@ -10,6 +10,8 @@ namespace CrashedWorld.UI
 {
 	public class GridSlotUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler, IBeginDragHandler, IDragHandler, IEndDragHandler, IDropHandler
 	{
+		public event Action<Item> OnDropItem;
+
 		public Color hoverColor = Color.white;
 		public Image frame;
 		public Image icon;
@@ -112,6 +114,7 @@ namespace CrashedWorld.UI
 					(Item, int) itemAmount = (originSlot.item, originSlot.amount);
 					originSlot.SetItem(null);
 					SetItem(itemAmount.Item1, itemAmount.Item2);
+					OnDropItem?.Invoke(itemAmount.Item1);
 				}
 			}
 		}
