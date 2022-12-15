@@ -18,5 +18,5 @@ MonoBehaviour:
   icon: {fileID: 21300000, guid: e4b6a20af22bd9249adf7ed8429216d4, type: 3}
   isStackable: 0
   upgradeRecipe: []
-  enemyDamage: 1
-  environmentDamage: 6
+  weaponType: 2
+  damageValue: 6
