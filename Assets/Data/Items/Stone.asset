@@ -15,5 +15,5 @@ MonoBehaviour:
   ID: Stone
   itemName: Stone
   description: The most pritimive weapon used by many species.
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: bdd7be798b6f00a43b1f088475902032, type: 3}
   isStackable: 1

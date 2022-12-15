@@ -15,6 +15,7 @@ MonoBehaviour:
   ID: GreatHealthPotion
   itemName: Great health potion
   description: An health potion that is much more powerfull and give 6hp.
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 247a64d00374b844db8a13041e86ef8c, type: 3}
   isStackable: 0
   health: 6
+  upgradeRecipe: []

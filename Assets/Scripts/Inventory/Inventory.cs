@@ -1,6 +1,5 @@
 using CrashedWorld.Attribute;
 using CrashedWorld.Items;
-using CrashedWorld.Utilities;
 using System;
 using System.Collections.Generic;
 
@@ -20,11 +19,22 @@ namespace CrashedWorld.Inventories
 
 		public Dictionary<string, int> items = new Dictionary<string, int>();
 
+		public int size { get; private set; }
+
+		public Inventory(int size = -1)
+		{
+			this.size = size;
+		}
+
 		public void Add(List<ItemAmount> items) => items.ForEach(i => Add(i));
 		public void Add(ItemAmount itemAmount) => Add(itemAmount.itemID, itemAmount.amount);
 		public void Add(Item item, int value = 1) => Add(item.ID, value);
 		public void Add(string item, int value = 1)
 		{
+			//if size == -1 there is no limit
+			if (size != -1 && items.Keys.Count >= size)
+				return;
+
 			if (items.ContainsKey(item))
 				items[item] += value;
 			else
@@ -54,6 +64,12 @@ namespace CrashedWorld.Inventories
 		public bool Contains(string item, int value = 1)
 		{
 			return items.ContainsKey(item) && items[item] >= value;
+		}
+
+		public int Count(Item item) => Count(item.ID);
+		public int Count(string item)
+		{
+			return items.ContainsKey(item) ? items[item] : 0;
 		}
 	}
 

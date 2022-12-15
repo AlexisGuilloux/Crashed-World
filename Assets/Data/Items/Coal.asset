@@ -15,5 +15,5 @@ MonoBehaviour:
   ID: Coal
   itemName: Coal
   description: A dark rock that can be usefull in the hand of knowing people.
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 6fcafe0041772ec4a8e8c15a5203a196, type: 3}
   isStackable: 1
