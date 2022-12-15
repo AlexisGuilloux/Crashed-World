@@ -4,6 +4,7 @@ using CrashedWorld.Managers;
 using CrashedWorld.Utilities;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace CrashedWorld.Loots
@@ -11,8 +12,14 @@ namespace CrashedWorld.Loots
 	[RequireComponent(typeof(Collider))]
 	public class LootHolder : MonoBehaviour
 	{
+		[Header("   Health")]
 		public int health;
 
+		[Header("   Resistance")]
+		public List<WeaponTypeMultiplier> weaponTypeMultipliers = new List<WeaponTypeMultiplier>();
+		public float defaultMultiplier;
+
+		[Header("   Loot")]
 		public List<LootData> lootsData = new List<LootData>();
 
 		private void OnTriggerEnter(Collider other)
@@ -20,9 +27,8 @@ namespace CrashedWorld.Loots
 			if (!CanBeDamagedBy(other))
 				return;
 
-			//GetDamageValueOfOther
-
-			Damage(1);
+			int damageValue = 1 /*Mathf.RoundToInt(other.damageValue * GetMultiplier(other.weaponType))*/;
+			Damage(damageValue);
 		}
 
 		private bool CanBeDamagedBy(Collider other)
@@ -47,6 +53,16 @@ namespace CrashedWorld.Loots
 		public List<string> Drop()
 		{
 			return Utility.GetRandomWeighted(lootsData, ld => ld.weight).items;
+		}
+
+		private float GetMultiplier(WeaponTypes type)
+		{
+			WeaponTypeMultiplier weaponMultiplier = weaponTypeMultipliers.FirstOrDefault(wtm => wtm.type == type);
+
+			if (weaponMultiplier == null)
+				return defaultMultiplier;
+
+			return weaponMultiplier.multiplier;
 		}
 
 		[Serializable]

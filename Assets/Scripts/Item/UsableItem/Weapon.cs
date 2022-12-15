@@ -9,12 +9,11 @@ namespace CrashedWorld.Items
 	{
 		[Space, Header("   Weapon")]
 		public List<Recipe> upgradeRecipe = new List<Recipe>();
-		
-		[Tooltip("Damage deal to enemy entities")]
-		public int enemyDamage;
-		
-		[Tooltip("Damage deal to trees, minerals and so on...")]
-		public int environmentDamage;
+
+		public WeaponTypes weaponType;
+
+		[Tooltip("Target damage deal to other entity")]
+		public int damageValue;
 
 		public void Use()
 		{
