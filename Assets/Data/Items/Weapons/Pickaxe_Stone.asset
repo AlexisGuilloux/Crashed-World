@@ -19,5 +19,5 @@ MonoBehaviour:
   isStackable: 0
   upgradeRecipe:
   - {fileID: 11400000, guid: d479f4d7bf4280b4ebb53149ce172994, type: 2}
-  enemyDamage: 0
-  environmentDamage: 4
+  weaponType: 2
+  damageValue: 4
