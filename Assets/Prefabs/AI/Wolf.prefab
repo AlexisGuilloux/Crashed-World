@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3719732877861237423}
   - component: {fileID: 3719732877861237422}
   - component: {fileID: 3719732877861237392}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Wolf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -186,6 +186,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3719732877861237421}
     m_Modifications:
+    - target: {fileID: 121430123574273815, guid: 88258891228d3e54c93c97352beaeefe,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 322034489449971841, guid: 88258891228d3e54c93c97352beaeefe,
         type: 3}
       propertyPath: m_RootOrder
@@ -256,10 +261,60 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1675793018784062939, guid: 88258891228d3e54c93c97352beaeefe,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2006227400408403056, guid: 88258891228d3e54c93c97352beaeefe,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2756644702959335333, guid: 88258891228d3e54c93c97352beaeefe,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3760355000522927055, guid: 88258891228d3e54c93c97352beaeefe,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4173306401824533916, guid: 88258891228d3e54c93c97352beaeefe,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4614404231023751385, guid: 88258891228d3e54c93c97352beaeefe,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5222876616787580802, guid: 88258891228d3e54c93c97352beaeefe,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292181851349983468, guid: 88258891228d3e54c93c97352beaeefe,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7584388336491485703, guid: 88258891228d3e54c93c97352beaeefe,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 8337061753258578076, guid: 88258891228d3e54c93c97352beaeefe,
         type: 3}
       propertyPath: m_Name
       value: SpriteWolf
+      objectReference: {fileID: 0}
+    - target: {fileID: 8337061753258578076, guid: 88258891228d3e54c93c97352beaeefe,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88258891228d3e54c93c97352beaeefe, type: 3}
@@ -314,10 +369,20 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7291321614449283621, guid: 708720907fa5a474e88c0493a3b35eb5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 7291321615268191611, guid: 708720907fa5a474e88c0493a3b35eb5,
         type: 3}
       propertyPath: m_Name
       value: HealtCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7291321615268191611, guid: 708720907fa5a474e88c0493a3b35eb5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 7291321615268191611, guid: 708720907fa5a474e88c0493a3b35eb5,
         type: 3}
@@ -443,6 +508,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7291321615916617868, guid: 708720907fa5a474e88c0493a3b35eb5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7291321616145441728, guid: 708720907fa5a474e88c0493a3b35eb5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7291321616148180793, guid: 708720907fa5a474e88c0493a3b35eb5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 708720907fa5a474e88c0493a3b35eb5, type: 3}
