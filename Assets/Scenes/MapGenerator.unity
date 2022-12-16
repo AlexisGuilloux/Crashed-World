@@ -44660,6 +44660,46 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3231480817855207440, guid: 50d746c03fea2614799705a08b39884a,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3231480817855207440, guid: 50d746c03fea2614799705a08b39884a,
+        type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3231480817855207440, guid: 50d746c03fea2614799705a08b39884a,
+        type: 3}
+      propertyPath: m_DrawMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3231480817855207440, guid: 50d746c03fea2614799705a08b39884a,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3231480817855207440, guid: 50d746c03fea2614799705a08b39884a,
+        type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3231480817855207440, guid: 50d746c03fea2614799705a08b39884a,
+        type: 3}
+      propertyPath: m_MaskInteraction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3231480817855207440, guid: 50d746c03fea2614799705a08b39884a,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3231480817855207440, guid: 50d746c03fea2614799705a08b39884a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 022ece2f4f2802048a5fa05ddea4e3fb, type: 2}
     - target: {fileID: 3231480817855207449, guid: 50d746c03fea2614799705a08b39884a,
         type: 3}
       propertyPath: m_Name
@@ -72278,17 +72318,17 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   colorGradientTexture: {fileID: 0}
   shallowColor: {r: 0, g: 0.7725491, b: 0.62352943, a: 0.5019608}
-  deepColor: {r: 0.01176471, g: 0.28601944, b: 0.50980073, a: 1}
+  deepColor: {r: 0.01176471, g: 0.28601813, b: 0.50980073, a: 1}
   colorDepth: 0.57
-  horizonColor: {r: 0, g: 0.22719595, b: 0.8, a: 1}
+  horizonColor: {r: 0, g: 0.22719464, b: 0.8, a: 1}
   horizonDistance: 20
   shoreFade: 1
-  shoreColor: {r: 0, g: 0.98039216, b: 0.30170575, a: 0}
+  shoreColor: {r: 0, g: 0.98039216, b: 0.3017044, a: 0}
   shoreStrength: 0
   shoreBlend: 1
   shoreDepth: 0.74
   waveColor: {r: 0, g: 0, b: 0, a: 0}
-  underwaterColor: {r: 0.20367983, g: 0.30954885, b: 0.517647, a: 0}
+  underwaterColor: {r: 0.20367858, g: 0.3095475, b: 0.517647, a: 0}
   underwaterColorStrength: 0
   underwaterRefractionStrength: 0.099
   surfaceFoamTexture: {fileID: 2800000, guid: ab507ff7ff37d954da98b07bf0bb152e, type: 3}
@@ -72296,8 +72336,8 @@ MonoBehaviour:
   surfaceFoamCutoff: 0.56
   surfaceFoamDistortion: 0
   surfaceFoamBlend: 1
-  surfaceFoamColor1: {r: 0.058631405, g: 0.055819638, b: 0.9245283, a: 0.6509804}
-  surfaceFoamColor2: {r: 0.16269988, g: 0.15711874, b: 0.8584906, a: 0}
+  surfaceFoamColor1: {r: 0.058630414, g: 0.055818677, b: 0.9245283, a: 0.6509804}
+  surfaceFoamColor2: {r: 0.16269863, g: 0.15711749, b: 0.8584906, a: 0}
   surfaceFoamMovement: {x: 0.7, y: 0, z: 0.47, w: 0.01}
   surfaceFoamDirection1: 0.7
   surfaceFoamDirection2: 0.47
@@ -72320,7 +72360,7 @@ MonoBehaviour:
   intersectionFoamDepth: 0.72
   intersectionFoamTexture: {fileID: 2800000, guid: 772031b03d9d46e4ab03e15c8e17718c,
     type: 3}
-  intersectionFoamColor: {r: 0.07155534, g: 0.13336545, b: 0.5660378, a: 1}
+  intersectionFoamColor: {r: 0.071554415, g: 0.1333642, b: 0.5660378, a: 1}
   intersectionFoamMovement: {x: 0, y: 0}
   intersectionFoamDirection: 0
   intersectionFoamSpeed: 0
