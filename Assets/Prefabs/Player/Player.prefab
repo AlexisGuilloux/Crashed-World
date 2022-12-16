@@ -10,11 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3231480817855207453}
   - component: {fileID: 3231480817855207440}
-  - component: {fileID: 3231480817855207450}
   - component: {fileID: 3231480817855207455}
   - component: {fileID: 3231480817855207454}
-  - component: {fileID: 3803327242889564316}
-  - component: {fileID: 2909325953150674096}
+  - component: {fileID: 6221741513690975209}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -79,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 28b8cfd3cab242f45a0ff084dd579068, type: 3}
+  m_Sprite: {fileID: -77043556, guid: 7fa3a4907e8d61d47a17179554129048, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -90,19 +88,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!65 &3231480817855207450
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3231480817855207449}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.3, y: 0.4, z: 0.3}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!143 &3231480817855207455
 CharacterController:
   m_ObjectHideFlags: 0
@@ -114,7 +99,7 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 0.5
+  m_Height: 0.45
   m_Radius: 0.2
   m_SlopeLimit: 45
   m_StepOffset: 0.3
@@ -139,33 +124,26 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   healthBar: {fileID: 6332194402429765225}
---- !u!114 &3803327242889564316
-MonoBehaviour:
+--- !u!95 &6221741513690975209
+Animator:
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3231480817855207449}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f61e6ca597cbbd44934ef64442a5e87, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startItems:
-  - itemID: WoodSword
-    amount: 1
---- !u!114 &2909325953150674096
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3231480817855207449}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc00b0e1b3cce2e4e894159ce3b3b719, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9b3ea0fe44bca0a4686526147299438a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &7291321615754772051
 PrefabInstance:
   m_ObjectHideFlags: 0
