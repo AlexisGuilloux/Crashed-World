@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3231480817855207455}
   - component: {fileID: 3231480817855207454}
   - component: {fileID: 3803327242889564316}
+  - component: {fileID: 2909325953150674096}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -153,6 +154,18 @@ MonoBehaviour:
   startItems:
   - itemID: WoodSword
     amount: 1
+--- !u!114 &2909325953150674096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3231480817855207449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc00b0e1b3cce2e4e894159ce3b3b719, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7291321615754772051
 PrefabInstance:
   m_ObjectHideFlags: 0
