@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4631e973234004488c3bbb9c3698e32, type: 3}
+  m_Name: Sword_Stone
+  m_EditorClassIdentifier: 
+  ID: StoneSword
+  itemName: Stone sword
+  description: A wood sword with stone as the blade part
+  icon: {fileID: 21300000, guid: a319ff9a52b030344b73878d5005dc97, type: 3}
+  isStackable: 0
+  upgradeRecipe:
+  - {fileID: 11400000, guid: c7087cac81cf1854cbb83cc286b67012, type: 2}
+  weaponType: 0
+  damageValue: 3

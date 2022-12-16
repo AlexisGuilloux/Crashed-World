@@ -15,7 +15,6 @@ namespace CrashedWorld.UI
 
 		[Header("   References")]
 		public RecipeUI recipeUI;
-		public Image resultImage;
 		public GameObject keycodeContainer;
 		public TextMeshProUGUI keycodeLabel;
 
@@ -49,7 +48,6 @@ namespace CrashedWorld.UI
 			this.recipe = recipe;
 
 			Item item = ItemManager.Instance.database.Get(recipe.result);
-			resultImage.sprite = item.icon;
 
 			recipeUI.Init(recipe);
 

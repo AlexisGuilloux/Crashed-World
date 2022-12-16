@@ -22,6 +22,7 @@ namespace Procedural_Generation {
         private List<GameObject> objectsOnMap = new List<GameObject>();
         private void Start() {
             DrawMapInEditor();
+            GenerateCrystals();
         }
 
         void GenerateMapData() {
@@ -73,7 +74,12 @@ namespace Procedural_Generation {
             return falloffMap;
         }
 
-        void GenerateCrystals(Cell[,] grid) {
+        internal void GenerateCrystals() {
+            foreach (var tree in objectsOnMap) {
+                DestroyImmediate(tree);
+            }
+            objectsOnMap.Clear();
+            
             float[,] treeNoiseMap = GenerateNoiseMap(size, seed, treeNoiseScale, offset);
             for (int y = 0; y < size; y++) {
                 for (int x = 0; x < size; x++) {
@@ -105,13 +111,8 @@ namespace Procedural_Generation {
         }
 
         public void DrawMapInEditor() {
-            foreach (var tree in objectsOnMap) {
-                DestroyImmediate(tree);
-            }
-            objectsOnMap.Clear();
             GenerateMapData();
             MapDisplay display = FindObjectOfType<MapDisplay>();
-            GenerateCrystals(grid);
             display.DrawTerrainMesh(grid, size);
         }
     }

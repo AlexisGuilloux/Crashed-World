@@ -19,3 +19,4 @@ MonoBehaviour:
   - itemID: RedHerbs
     amount: 2
   result: GreatHealthPotion
+  isUpgradeRecipe: 1
