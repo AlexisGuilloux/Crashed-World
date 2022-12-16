@@ -74,7 +74,7 @@ namespace Procedural_Generation {
             return falloffMap;
         }
 
-        internal void GenerateCrystals() {
+        public void GenerateCrystals() {
             foreach (var tree in objectsOnMap) {
                 DestroyImmediate(tree);
             }
@@ -114,6 +114,15 @@ namespace Procedural_Generation {
             GenerateMapData();
             MapDisplay display = FindObjectOfType<MapDisplay>();
             display.DrawTerrainMesh(grid, size);
+
+            MapGeneratorEvents.waterLevelEvent?.Invoke(waterLevel);
+            MapGeneratorEvents.treeDensityEvent?.Invoke(treeDensity);
         }
+    }
+
+    public class MapGeneratorEvents
+    {
+        public static Action<float> waterLevelEvent;
+        public static Action<float> treeDensityEvent;
     }
 }

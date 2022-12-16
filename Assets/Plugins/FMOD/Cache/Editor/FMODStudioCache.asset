@@ -1,5 +1,159 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6302311885446307980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/Weather/Weather_Wind/Weather_Wind_Soft/Weather_Wind_Soft
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience/Weather/Weather_Wind/Weather_Wind_Soft/Weather_Wind_Soft
+  Guid:
+    Data1: -800045170
+    Data2: 1324736631
+    Data3: -1518403949
+    Data4: 535176576
+  Banks:
+  - {fileID: -77690059118878222}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6000
+--- !u!114 &-6278806585882113850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/Water/Water_Gentle/Water_Gentle_Wave_Lp
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience/Water/Water_Gentle/Water_Gentle_Wave_Lp
+  Guid:
+    Data1: 282431347
+    Data2: 1260650521
+    Data3: 87314579
+    Data4: -1502339645
+  Banks:
+  - {fileID: -77690059118878222}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -6012823800757641327}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 57469
+--- !u!114 &-6012823800757641327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Water_Gentle_Wave_Lp/WaterLevel
+  m_EditorClassIdentifier: 
+  Name: WaterLevel
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3928936524
+    data2: 3586714757
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-5727171885930859159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Nature_Tropical_Calm_Lp/WaterLevel
+  m_EditorClassIdentifier: 
+  Name: WaterLevel
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3928936524
+    data2: 3586714757
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-5672600856426389847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Nature_Desert_Calm_Multi/TreeDensity
+  m_EditorClassIdentifier: 
+  Name: TreeDensity
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 1663550588
+    data2: 1149003406
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-4889031668336272574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Drone/Drone_Critical_Lp
+  m_EditorClassIdentifier: 
+  Path: event:/Drone/Drone_Critical_Lp
+  Guid:
+    Data1: 1712698844
+    Data2: 1293680121
+    Data3: -1103905909
+    Data4: -1644510006
+  Banks:
+  - {fileID: -77690059118878222}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 60000
 --- !u!114 &-2347893461694245920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,11 +169,117 @@ MonoBehaviour:
   Path: FMOD Crashed World/Crashed World/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638065471241659890
+  lastModified: 638067969682718513
   FileSizes:
   - Name: Desktop
-    Value: 758
+    Value: 1498
   Exists: 1
+--- !u!114 &-2056961592840899197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Water_Gentle_Lp/WaterLevel
+  m_EditorClassIdentifier: 
+  Name: WaterLevel
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3928936524
+    data2: 3586714757
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-471091105178277884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/Weather/Weather_Wind/Weather_Wind_Strong/Weather_Wind_Strong
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience/Weather/Weather_Wind/Weather_Wind_Strong/Weather_Wind_Strong
+  Guid:
+    Data1: -996808873
+    Data2: 1112103946
+    Data3: -2096250215
+    Data4: -2027713124
+  Banks:
+  - {fileID: -77690059118878222}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6000
+--- !u!114 &-245923489228471667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/Nature/Desert/Nature_Desert_Calm_Multi
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience/Nature/Desert/Nature_Desert_Calm_Multi
+  Guid:
+    Data1: 110054963
+    Data2: 1339005120
+    Data3: 106024119
+    Data4: -1337279654
+  Banks:
+  - {fileID: -77690059118878222}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -5672600856426389847}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6000
+--- !u!114 &-126904294312411350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Drone/Drone_GTR_Space_Lp
+  m_EditorClassIdentifier: 
+  Path: event:/Drone/Drone_GTR_Space_Lp
+  Guid:
+    Data1: -320549325
+    Data2: 1078757232
+    Data3: -1541151306
+    Data4: -1167604164
+  Banks:
+  - {fileID: -77690059118878222}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 52000
 --- !u!114 &-77690059118878222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35,10 +295,10 @@ MonoBehaviour:
   Path: FMOD Crashed World/Crashed World/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638065471241649894
+  lastModified: 638067969682703506
   FileSizes:
   - Name: Desktop
-    Value: 9984
+    Value: 6780064
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -56,15 +316,48 @@ MonoBehaviour:
   - {fileID: -2347893461694245920}
   - {fileID: -77690059118878222}
   EditorEvents:
-  - {fileID: 6013569714655798502}
+  - {fileID: 2025330185470624939}
+  - {fileID: 6029860333678857686}
+  - {fileID: -245923489228471667}
+  - {fileID: -126904294312411350}
+  - {fileID: 531622350125156263}
+  - {fileID: -471091105178277884}
+  - {fileID: 7732079655679732013}
+  - {fileID: -6278806585882113850}
+  - {fileID: -6302311885446307980}
+  - {fileID: -4889031668336272574}
   EditorParameters: []
   MasterBanks:
   - {fileID: -77690059118878222}
   StringsBanks:
   - {fileID: -2347893461694245920}
-  cacheTime: 638065471241659890
+  cacheTime: 638067969682718513
   cacheVersion: 131601
---- !u!114 &6013569714655798502
+--- !u!114 &261720988589989700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Nature_Forest_Calm_Multi/TreeDensity
+  m_EditorClassIdentifier: 
+  Name: TreeDensity
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 1663550588
+    data2: 1149003406
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &531622350125156263
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -74,20 +367,154 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/AudioTest
+  m_Name: event:/Ambience/Water/Water_Gentle/Water_Gentle_Lp
   m_EditorClassIdentifier: 
-  Path: event:/AudioTest
+  Path: event:/Ambience/Water/Water_Gentle/Water_Gentle_Lp
   Guid:
-    Data1: 1011671766
-    Data2: 1294767047
-    Data3: 1221587869
-    Data4: 1523565867
+    Data1: 10630459
+    Data2: 1235208680
+    Data3: 1747895474
+    Data4: -1564461698
+  Banks:
+  - {fileID: -77690059118878222}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -2056961592840899197}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 30000
+--- !u!114 &2025330185470624939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/Nature/Tropical/Nature_Tropical_Calm_Lp
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience/Nature/Tropical/Nature_Tropical_Calm_Lp
+  Guid:
+    Data1: 190290976
+    Data2: 1234062736
+    Data3: -171520626
+    Data4: 1108283367
+  Banks:
+  - {fileID: -77690059118878222}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 5024647873164035543}
+  - {fileID: -5727171885930859159}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 35000
+--- !u!114 &5024647873164035543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Nature_Tropical_Calm_Lp/TreeDensity
+  m_EditorClassIdentifier: 
+  Name: TreeDensity
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 1663550588
+    data2: 1149003406
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &6029860333678857686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambience/Nature/Forest/Nature_Forest_Calm_Multi
+  m_EditorClassIdentifier: 
+  Path: event:/Ambience/Nature/Forest/Nature_Forest_Calm_Multi
+  Guid:
+    Data1: -86614235
+    Data2: 1107215854
+    Data3: 1571011761
+    Data4: 1542769569
   Banks:
   - {fileID: -77690059118878222}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
+  Parameters:
+  - {fileID: 261720988589989700}
+  - {fileID: 7830118459476597806}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6000
+--- !u!114 &7732079655679732013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Drone/Drone_Mysterious_Lp
+  m_EditorClassIdentifier: 
+  Path: event:/Drone/Drone_Mysterious_Lp
+  Guid:
+    Data1: -764330136
+    Data2: 1133323339
+    Data3: 1143437236
+    Data4: 2062282629
+  Banks:
+  - {fileID: -77690059118878222}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 773
+  Length: 90000
+--- !u!114 &7830118459476597806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Nature_Forest_Calm_Multi/WaterLevel
+  m_EditorClassIdentifier: 
+  Name: WaterLevel
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3928936524
+    data2: 3586714757
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1

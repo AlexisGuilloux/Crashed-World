@@ -10,11 +10,18 @@ public class Player : MonoBehaviour
     public float speed = 6f;
     public float gravity = 0.01f;
 
+    //HP
+    public int maxHealth = 100;
+    public int currentHealth;
+
+    public Health healthBar;
+
     // SPRITE MANAGERS
     private SpriteRenderer sprite;
 
     // CONTROLLER MANAGERS
     private InputControlller inpCon;
+    private Animator animator;
 
     // PRIVATE VARS (HELPERS)
     private bool isFlipped = false;
@@ -26,10 +33,15 @@ public class Player : MonoBehaviour
         // basic setup
         controller = GetComponent<CharacterController>();
         sprite = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
 
         // KEYBOARD
         inpCon = new InputControlller();
         inpCon.Enable();
+
+        //HP
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
     }
 
 
@@ -38,6 +50,8 @@ public class Player : MonoBehaviour
     {
         Vector2 inputVector = inpCon.Player.Movement.ReadValue<Vector2>() * speed * Time.deltaTime;
         controller.Move(new Vector3(inputVector.x, -gravity * Time.deltaTime, inputVector.y));
+
+        // Sprite direction
         if (inputVector.x == 0){
             sprite.flipX = isFlipped;
         }
@@ -45,6 +59,27 @@ public class Player : MonoBehaviour
             sprite.flipX = inputVector.x < 0;
             isFlipped = sprite.flipX;
         }
+
+        // Movement animations
+        if (inputVector == Vector2.zero)
+        {
+            animator.SetBool("IsMoving", false);
+        }
+        else { animator.SetBool("IsMoving", true); }
+
+        //TestZone for losing hp
+        /*if (Input.GetKeyDown(KeyCode.Space))
+        {
+            TakeDamage(20);
+        }*/
     }
+
     // -------------------------------------------------------------------------------------------- CUSTOM METHODS
+
+    void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+
+        healthBar.SetHealh(currentHealth);
+    }
 }
