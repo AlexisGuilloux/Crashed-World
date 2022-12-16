@@ -74,7 +74,7 @@ namespace Procedural_Generation {
             return falloffMap;
         }
 
-        internal void GenerateCrystals() {
+        public void GenerateCrystals() {
             foreach (var tree in objectsOnMap) {
                 DestroyImmediate(tree);
             }
