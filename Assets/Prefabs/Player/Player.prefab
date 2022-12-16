@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 3231480817855207455}
   - component: {fileID: 3231480817855207454}
   - component: {fileID: 6221741513690975209}
+  - component: {fileID: 7947690294102702930}
+  - component: {fileID: 8961174603823241108}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -144,6 +146,41 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7947690294102702930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3231480817855207449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f61e6ca597cbbd44934ef64442a5e87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startItems:
+  - itemID: WoodSword
+    amount: 1
+  - itemID: Stone
+    amount: 42
+  - itemID: Coal
+    amount: 32
+  - itemID: Wood
+    amount: 48
+  - itemID: RedHerbs
+    amount: 51
+--- !u!114 &8961174603823241108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3231480817855207449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc00b0e1b3cce2e4e894159ce3b3b719, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7291321615754772051
 PrefabInstance:
   m_ObjectHideFlags: 0
