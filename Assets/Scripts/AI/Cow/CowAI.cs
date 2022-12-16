@@ -35,6 +35,8 @@ namespace CrashedWorld
         bool m_IsPatrol;                                //  If the enemy is patrol, state of patroling
         bool m_CaughtPlayer;                            //  if the enemy has caught the player
 
+        public Flee S_flee;
+
         void Start()
         {
             m_PlayerPosition = Vector3.zero;
@@ -51,6 +53,8 @@ namespace CrashedWorld
             navMeshAgent.isStopped = false;
             navMeshAgent.speed = speedWalk;             //  Set the navemesh speed with the normal speed of the enemy
             navMeshAgent.SetDestination(waypoints[m_CurrentWaypointIndex].position);    //  Set the destination to the first waypoint
+
+            S_flee = GetComponent<Flee>();
         }
 
         private void Update()
@@ -59,7 +63,8 @@ namespace CrashedWorld
 
             if (!m_IsPatrol)
             {
-                Flee();
+                //Flee();
+                S_flee.IsFlee();
             }
             else
             {

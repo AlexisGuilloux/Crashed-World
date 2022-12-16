@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4753010764037052808}
   - component: {fileID: 4753010764037052810}
   - component: {fileID: 4753010764037052803}
+  - component: {fileID: 4915957213865036306}
   m_Layer: 0
   m_Name: Cow
   m_TagString: Untagged
@@ -171,6 +172,20 @@ MonoBehaviour:
   waypoints:
   - {fileID: 0}
   - {fileID: 0}
+  S_flee: {fileID: 4915957213865036306}
+--- !u!114 &4915957213865036306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4753010764037052811}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a2cd6e3eca5844ca1649039c3e7426, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
 --- !u!1001 &3780738803072111856
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -201,7 +216,7 @@ PrefabInstance:
     - target: {fileID: 322034489449971841, guid: 4a4d9467351cc4c498431d2ddce90274,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.75
       objectReference: {fileID: 0}
     - target: {fileID: 322034489449971841, guid: 4a4d9467351cc4c498431d2ddce90274,
         type: 3}
