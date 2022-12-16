@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{0c843fe5-c03a-4690-8515-d149c70ef24c}">
+		<property name="name">
+			<value>TreeDensity</value>
+		</property>
+		<relationship name="folder">
+			<destination>{8212949e-1f68-4c74-99f1-10bd319421ba}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{9d696f78-3402-4267-87df-448f2459f546}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{9d696f78-3402-4267-87df-448f2459f546}">
+		<property name="initialValue">
+			<value>1</value>
+		</property>
+	</object>
+</objects>

@@ -50,10 +50,83 @@ MonoBehaviour:
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
-  Parameters: []
+  Parameters:
+  - {fileID: -6012823800757641327}
   MinDistance: 1
   MaxDistance: 20
   Length: 57469
+--- !u!114 &-6012823800757641327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Water_Gentle_Wave_Lp/WaterLevel
+  m_EditorClassIdentifier: 
+  Name: WaterLevel
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3928936524
+    data2: 3586714757
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-5727171885930859159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Nature_Tropical_Calm_Lp/WaterLevel
+  m_EditorClassIdentifier: 
+  Name: WaterLevel
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3928936524
+    data2: 3586714757
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-5672600856426389847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Nature_Desert_Calm_Multi/TreeDensity
+  m_EditorClassIdentifier: 
+  Name: TreeDensity
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 1663550588
+    data2: 1149003406
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &-4889031668336272574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -96,10 +169,34 @@ MonoBehaviour:
   Path: FMOD Crashed World/Crashed World/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638067181458045944
+  lastModified: 638067874360252065
   FileSizes:
   - Name: Desktop
-    Value: 1392
+    Value: 1498
+  Exists: 1
+--- !u!114 &-2056961592840899197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Water_Gentle_Lp/WaterLevel
+  m_EditorClassIdentifier: 
+  Name: WaterLevel
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3928936524
+    data2: 3586714757
+  Type: 0
+  IsGlobal: 0
+  Labels: []
   Exists: 1
 --- !u!114 &-471091105178277884
 MonoBehaviour:
@@ -151,7 +248,8 @@ MonoBehaviour:
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
-  Parameters: []
+  Parameters:
+  - {fileID: -5672600856426389847}
   MinDistance: 1
   MaxDistance: 20
   Length: 6000
@@ -197,10 +295,10 @@ MonoBehaviour:
   Path: FMOD Crashed World/Crashed World/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638067181458521099
+  lastModified: 638067874360232069
   FileSizes:
   - Name: Desktop
-    Value: 6777632
+    Value: 6780064
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -233,8 +331,32 @@ MonoBehaviour:
   - {fileID: -77690059118878222}
   StringsBanks:
   - {fileID: -2347893461694245920}
-  cacheTime: 638067181458521099
+  cacheTime: 638067874360252065
   cacheVersion: 131601
+--- !u!114 &261720988589989700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Nature_Forest_Calm_Multi/TreeDensity
+  m_EditorClassIdentifier: 
+  Name: TreeDensity
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 1663550588
+    data2: 1149003406
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &531622350125156263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -258,7 +380,8 @@ MonoBehaviour:
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
-  Parameters: []
+  Parameters:
+  - {fileID: -2056961592840899197}
   MinDistance: 1
   MaxDistance: 20
   Length: 30000
@@ -285,10 +408,36 @@ MonoBehaviour:
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
-  Parameters: []
+  Parameters:
+  - {fileID: 5024647873164035543}
+  - {fileID: -5727171885930859159}
   MinDistance: 1
   MaxDistance: 20
   Length: 35000
+--- !u!114 &5024647873164035543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Nature_Tropical_Calm_Lp/TreeDensity
+  m_EditorClassIdentifier: 
+  Name: TreeDensity
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 1663550588
+    data2: 1149003406
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &6029860333678857686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -312,7 +461,9 @@ MonoBehaviour:
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
-  Parameters: []
+  Parameters:
+  - {fileID: 261720988589989700}
+  - {fileID: 7830118459476597806}
   MinDistance: 1
   MaxDistance: 20
   Length: 6000
@@ -343,3 +494,27 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 90000
+--- !u!114 &7830118459476597806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Nature_Forest_Calm_Multi/WaterLevel
+  m_EditorClassIdentifier: 
+  Name: WaterLevel
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3928936524
+    data2: 3586714757
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1

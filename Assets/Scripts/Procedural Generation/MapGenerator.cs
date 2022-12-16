@@ -114,6 +114,15 @@ namespace Procedural_Generation {
             GenerateMapData();
             MapDisplay display = FindObjectOfType<MapDisplay>();
             display.DrawTerrainMesh(grid, size);
+
+            MapGeneratorEvents.waterLevelEvent?.Invoke(waterLevel);
+            MapGeneratorEvents.treeDensityEvent?.Invoke(treeDensity);
         }
+    }
+
+    public class MapGeneratorEvents
+    {
+        public static Action<float> waterLevelEvent;
+        public static Action<float> treeDensityEvent;
     }
 }
