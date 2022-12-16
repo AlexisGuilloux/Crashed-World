@@ -63,8 +63,7 @@ namespace CrashedWorld
 
             if (!m_IsPatrol)
             {
-                //Flee();
-                S_flee.IsFlee();
+                Flee();
             }
             else
             {
@@ -81,7 +80,8 @@ namespace CrashedWorld
             if (!m_CaughtPlayer)
             {
                 Move(speedRun);
-                navMeshAgent.SetDestination(-m_PlayerPosition);          //  set the destination of the PNJ to the oposit of the player location
+                S_flee.IsFlee();
+                //navMeshAgent.SetDestination(m_PlayerPosition);          //  set the destination of the PNJ to the oposit of the player location
             }
             if (navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance)    //  Control if the player arrive to the PNJ location
             {

@@ -112,7 +112,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 3719732877861237417}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.5
+  m_Radius: 0.2
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
@@ -142,8 +142,8 @@ MonoBehaviour:
   timeToRotate: 2
   speedWalk: 1
   speedRun: 4
-  viewRadius: 15
-  viewAngle: 90
+  viewRadius: 10
+  viewAngle: 360
   playerMask:
     serializedVersion: 2
     m_Bits: 64
