@@ -3110,6 +3110,86 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 108780944}
     m_Modifications:
+    - target: {fileID: 345540982408728565, guid: 176d4a59073b15346bb94715a4bb42a1,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 345540982408728565, guid: 176d4a59073b15346bb94715a4bb42a1,
+        type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 345540982408728565, guid: 176d4a59073b15346bb94715a4bb42a1,
+        type: 3}
+      propertyPath: m_DrawMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 345540982408728565, guid: 176d4a59073b15346bb94715a4bb42a1,
+        type: 3}
+      propertyPath: m_MaskInteraction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1504755996373488994, guid: 176d4a59073b15346bb94715a4bb42a1,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1504755996373488994, guid: 176d4a59073b15346bb94715a4bb42a1,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.99999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 2339644739727764134, guid: 176d4a59073b15346bb94715a4bb42a1,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2339644739727764134, guid: 176d4a59073b15346bb94715a4bb42a1,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.99999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 3238656362597402625, guid: 176d4a59073b15346bb94715a4bb42a1,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3238656362597402625, guid: 176d4a59073b15346bb94715a4bb42a1,
+        type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3238656362597402625, guid: 176d4a59073b15346bb94715a4bb42a1,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3238656362597402625, guid: 176d4a59073b15346bb94715a4bb42a1,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3238656362597402625, guid: 176d4a59073b15346bb94715a4bb42a1,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3238656362597402625, guid: 176d4a59073b15346bb94715a4bb42a1,
+        type: 3}
+      propertyPath: m_DrawMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3238656362597402625, guid: 176d4a59073b15346bb94715a4bb42a1,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3238656362597402625, guid: 176d4a59073b15346bb94715a4bb42a1,
+        type: 3}
+      propertyPath: m_MaskInteraction
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3463260693702186097, guid: 176d4a59073b15346bb94715a4bb42a1,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -3235,6 +3315,101 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5251409426304746719, guid: 176d4a59073b15346bb94715a4bb42a1,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.9999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 5251409426304746719, guid: 176d4a59073b15346bb94715a4bb42a1,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5909873834149988317, guid: 176d4a59073b15346bb94715a4bb42a1,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5909873834149988317, guid: 176d4a59073b15346bb94715a4bb42a1,
+        type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5909873834149988317, guid: 176d4a59073b15346bb94715a4bb42a1,
+        type: 3}
+      propertyPath: m_DrawMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5909873834149988317, guid: 176d4a59073b15346bb94715a4bb42a1,
+        type: 3}
+      propertyPath: m_MaskInteraction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8061701549869540394, guid: 176d4a59073b15346bb94715a4bb42a1,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8061701549869540394, guid: 176d4a59073b15346bb94715a4bb42a1,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8648041816754425269, guid: 176d4a59073b15346bb94715a4bb42a1,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8648041816754425269, guid: 176d4a59073b15346bb94715a4bb42a1,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.99999994
+      objectReference: {fileID: 0}
+    - target: {fileID: 8648041816754425269, guid: 176d4a59073b15346bb94715a4bb42a1,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.031829834
+      objectReference: {fileID: 0}
+    - target: {fileID: 8666005245923376033, guid: 176d4a59073b15346bb94715a4bb42a1,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8666005245923376033, guid: 176d4a59073b15346bb94715a4bb42a1,
+        type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8666005245923376033, guid: 176d4a59073b15346bb94715a4bb42a1,
+        type: 3}
+      propertyPath: m_DrawMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8666005245923376033, guid: 176d4a59073b15346bb94715a4bb42a1,
+        type: 3}
+      propertyPath: m_MaskInteraction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9215887012060400413, guid: 176d4a59073b15346bb94715a4bb42a1,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9215887012060400413, guid: 176d4a59073b15346bb94715a4bb42a1,
+        type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9215887012060400413, guid: 176d4a59073b15346bb94715a4bb42a1,
+        type: 3}
+      propertyPath: m_DrawMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9215887012060400413, guid: 176d4a59073b15346bb94715a4bb42a1,
+        type: 3}
+      propertyPath: m_MaskInteraction
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 176d4a59073b15346bb94715a4bb42a1, type: 3}
 --- !u!4 &1944945981 stripped
@@ -3357,10 +3532,50 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 108780944}
     m_Modifications:
+    - target: {fileID: 226128859905532930, guid: 01376be7ecdd68a4aae84290364f518a,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 226128859905532930, guid: 01376be7ecdd68a4aae84290364f518a,
+        type: 3}
+      propertyPath: m_DrawMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 226128859905532930, guid: 01376be7ecdd68a4aae84290364f518a,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 226128859905532930, guid: 01376be7ecdd68a4aae84290364f518a,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3719732877861237417, guid: 01376be7ecdd68a4aae84290364f518a,
         type: 3}
       propertyPath: m_Name
       value: Wolf
+      objectReference: {fileID: 0}
+    - target: {fileID: 3719732877861237419, guid: 01376be7ecdd68a4aae84290364f518a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3719732877861237419, guid: 01376be7ecdd68a4aae84290364f518a,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3719732877861237419, guid: 01376be7ecdd68a4aae84290364f518a,
+        type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3719732877861237419, guid: 01376be7ecdd68a4aae84290364f518a,
+        type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3719732877861237421, guid: 01376be7ecdd68a4aae84290364f518a,
         type: 3}
@@ -3530,17 +3745,17 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   colorGradientTexture: {fileID: 0}
   shallowColor: {r: 0, g: 0.7725491, b: 0.62352943, a: 0.5019608}
-  deepColor: {r: 0.01176471, g: 0.28601554, b: 0.50980073, a: 1}
+  deepColor: {r: 0.01176471, g: 0.28601584, b: 0.50980073, a: 1}
   colorDepth: 0.57
-  horizonColor: {r: 0, g: 0.22719204, b: 0.8, a: 1}
+  horizonColor: {r: 0, g: 0.22719234, b: 0.8, a: 1}
   horizonDistance: 20
   shoreFade: 1
-  shoreColor: {r: 0, g: 0.98039216, b: 0.30170184, a: 0}
+  shoreColor: {r: 0, g: 0.98039216, b: 0.3017021, a: 0}
   shoreStrength: 0
   shoreBlend: 1
   shoreDepth: 0.74
   waveColor: {r: 0, g: 0, b: 0, a: 0}
-  underwaterColor: {r: 0.20367613, g: 0.30954495, b: 0.517647, a: 0}
+  underwaterColor: {r: 0.2036764, g: 0.30954522, b: 0.517647, a: 0}
   underwaterColorStrength: 0
   underwaterRefractionStrength: 0.099
   surfaceFoamTexture: {fileID: 2800000, guid: ab507ff7ff37d954da98b07bf0bb152e, type: 3}
@@ -3548,8 +3763,8 @@ MonoBehaviour:
   surfaceFoamCutoff: 0.56
   surfaceFoamDistortion: 0
   surfaceFoamBlend: 1
-  surfaceFoamColor1: {r: 0.058628485, g: 0.05581683, b: 0.9245283, a: 0.6509804}
-  surfaceFoamColor2: {r: 0.16269618, g: 0.15711504, b: 0.8584906, a: 0}
+  surfaceFoamColor1: {r: 0.058628693, g: 0.05581703, b: 0.9245283, a: 0.6509804}
+  surfaceFoamColor2: {r: 0.16269645, g: 0.15711531, b: 0.8584906, a: 0}
   surfaceFoamMovement: {x: 0.7, y: 0, z: 0.47, w: 0.01}
   surfaceFoamDirection1: 0.7
   surfaceFoamDirection2: 0.47
@@ -3572,7 +3787,7 @@ MonoBehaviour:
   intersectionFoamDepth: 0.72
   intersectionFoamTexture: {fileID: 2800000, guid: 772031b03d9d46e4ab03e15c8e17718c,
     type: 3}
-  intersectionFoamColor: {r: 0.07155254, g: 0.13336176, b: 0.5660378, a: 1}
+  intersectionFoamColor: {r: 0.07155273, g: 0.13336203, b: 0.5660378, a: 1}
   intersectionFoamMovement: {x: 0, y: 0}
   intersectionFoamDirection: 0
   intersectionFoamSpeed: 0
