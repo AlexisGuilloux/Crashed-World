@@ -888,6 +888,46 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3231480817855207440, guid: 50d746c03fea2614799705a08b39884a,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3231480817855207440, guid: 50d746c03fea2614799705a08b39884a,
+        type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3231480817855207440, guid: 50d746c03fea2614799705a08b39884a,
+        type: 3}
+      propertyPath: m_DrawMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3231480817855207440, guid: 50d746c03fea2614799705a08b39884a,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3231480817855207440, guid: 50d746c03fea2614799705a08b39884a,
+        type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3231480817855207440, guid: 50d746c03fea2614799705a08b39884a,
+        type: 3}
+      propertyPath: m_MaskInteraction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3231480817855207440, guid: 50d746c03fea2614799705a08b39884a,
+        type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3231480817855207440, guid: 50d746c03fea2614799705a08b39884a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 022ece2f4f2802048a5fa05ddea4e3fb, type: 2}
     - target: {fileID: 3231480817855207449, guid: 50d746c03fea2614799705a08b39884a,
         type: 3}
       propertyPath: m_Name

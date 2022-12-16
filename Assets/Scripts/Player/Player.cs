@@ -21,6 +21,7 @@ public class Player : MonoBehaviour
 
     // CONTROLLER MANAGERS
     private InputControlller inpCon;
+    private Animator animator;
 
     // PRIVATE VARS (HELPERS)
     private bool isFlipped = false;
@@ -32,6 +33,7 @@ public class Player : MonoBehaviour
         // basic setup
         controller = GetComponent<CharacterController>();
         sprite = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
 
         // KEYBOARD
         inpCon = new InputControlller();
@@ -48,6 +50,8 @@ public class Player : MonoBehaviour
     {
         Vector2 inputVector = inpCon.Player.Movement.ReadValue<Vector2>() * speed * Time.deltaTime;
         controller.Move(new Vector3(inputVector.x, -gravity * Time.deltaTime, inputVector.y));
+
+        // Sprite direction
         if (inputVector.x == 0){
             sprite.flipX = isFlipped;
         }
@@ -56,12 +60,20 @@ public class Player : MonoBehaviour
             isFlipped = sprite.flipX;
         }
 
+        // Movement animations
+        if (inputVector == Vector2.zero)
+        {
+            animator.SetBool("IsMoving", false);
+        }
+        else { animator.SetBool("IsMoving", true); }
+
         //TestZone for losing hp
         /*if (Input.GetKeyDown(KeyCode.Space))
         {
             TakeDamage(20);
         }*/
     }
+
     // -------------------------------------------------------------------------------------------- CUSTOM METHODS
 
     void TakeDamage(int damage)
