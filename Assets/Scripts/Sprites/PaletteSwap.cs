@@ -10,8 +10,8 @@ public class PaletteSwap : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        baseColor = Random.ColorHSV(0f, 1f, 0.5f, 0.8f, 0.6f, 0.8f);
-        featColor = Random.ColorHSV(0f, 1f, 0.5f, 0.8f, 0.6f, 0.8f);
+        baseColor = Random.ColorHSV(0f, 1f, 0.5f, 0.75f, 0.7f, 0.9f);
+        featColor = Random.ColorHSV(0f, 1f, 0.5f, 0.75f, 0.7f, 0.9f);
 
         foreach (Transform child in transform)
         {
