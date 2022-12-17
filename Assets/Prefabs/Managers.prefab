@@ -61,6 +61,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd5f60c6caf324d4a9c2de3b59ed9d9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxPinRecipe: 4
   recipes:
   - {fileID: 11400000, guid: 38734ca2908cb1a479e4f4a149044183, type: 2}
   - {fileID: 11400000, guid: a205165fd51e16344bb4181b6e27574e, type: 2}
@@ -73,3 +74,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 4a122c9ca5f30354a80d9c08e60b5fa7, type: 2}
   - {fileID: 11400000, guid: 8b4119a276bc05a4cb18b6b81c374e2b, type: 2}
   - {fileID: 11400000, guid: eab4ad34b66d5a44aac7a2575a282127, type: 2}
+  selectedRecipeIndex: 0

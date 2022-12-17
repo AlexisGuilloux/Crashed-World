@@ -2,6 +2,7 @@ using CrashedWorld.Crafts;
 using CrashedWorld.Items;
 using CrashedWorld.Managers;
 using CrashedWorld.Player;
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -17,64 +18,38 @@ namespace CrashedWorld.UI
 		public RecipeUI recipeUI;
 		public GameObject keycodeContainer;
 		public TextMeshProUGUI keycodeLabel;
+		public Animator anim;
 
 		private Recipe recipe;
+		private bool selected;
 
-		void Awake()
-		{
-			Hide();
-			Locator.pinRecipe = this;
-		}
-
-		void Start()
-		{
-			CraftManager.OnRecipeSelected += CraftManager_OnRecipeSelected;
-			CraftManager.OnCraftSucceed += CraftManager_OnCraftSucceed;
-		}
-
-		private void CraftManager_OnRecipeSelected(Recipe recipe)
-		{
-			Init(recipe);
-		}
-
-		private void CraftManager_OnCraftSucceed(Recipe recipe)
-		{
-			if (this.recipe == recipe)
-				Delete();
-		}
-
-		public void Init(Recipe recipe)
+		public PinRecipeUI Init(Recipe recipe)
 		{
 			this.recipe = recipe;
-
-			Item item = ItemManager.Instance.database.Get(recipe.result);
-
 			recipeUI.Init(recipe);
 
-			Show();
+			return this;
 		}
 
 		public void Delete()
 		{
-			recipe = null;
-			Hide();
-		}
-
-		public void Show()
-		{
-			canvas.alpha = 1;
-		}
-
-		public void Hide()
-		{
-			canvas.alpha = 0;
+			Destroy(gameObject);
 		}
 
 		public void Update()
 		{
-			if (recipe != null)
+			if (selected && recipe != null)
 				keycodeContainer.SetActive(recipe.CanBeCrafted(PlayerInventory.Instance.bag));
 		}
+
+		private void Toggle(bool select)
+		{
+			selected = select;
+			anim.SetBool("selected", selected);
+		}
+
+		public void Select() => Toggle(true);
+		public void UnSelect() => Toggle(false);
 	}
 }
 
