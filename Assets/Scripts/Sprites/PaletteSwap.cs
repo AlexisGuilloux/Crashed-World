@@ -7,6 +7,8 @@ public class PaletteSwap : MonoBehaviour
     private Color baseColor; // base color
     private Color featColor; // feat color
 
+    public bool isMesh = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,6 +17,16 @@ public class PaletteSwap : MonoBehaviour
 
         foreach (Transform child in transform)
         {
+            
+            if (isMesh)
+            {
+                child.GetComponent<MeshRenderer>().material.EnableKeyword("_Color");
+                child.GetComponent<MeshRenderer>().material.EnableKeyword("_FeatColor");
+                child.GetComponent<MeshRenderer>().material.SetColor("_Color", baseColor);
+                child.GetComponent<MeshRenderer>().material.SetColor("_FeatColor", featColor);
+                Debug.Log("oui");
+                return;
+            }
             child.GetComponent<SpriteRenderer>().material.EnableKeyword("_Color");
             child.GetComponent<SpriteRenderer>().material.EnableKeyword("_FeatColor");
             child.GetComponent<SpriteRenderer>().material.SetColor("_Color", baseColor);
